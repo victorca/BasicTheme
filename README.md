@@ -93,7 +93,7 @@ FAQ
 
 Search
 
-TODO: To organice
+TODO: To organize
 ============================
 
 Scroll
