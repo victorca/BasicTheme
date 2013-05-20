@@ -27,8 +27,8 @@
  that makes impossible to initially style unfolded accordion headers
  without mess with the unfolded styles.
  */
-(function($) {
-	$('.accordion-body').each(function(){
+(function ($) {
+	$('.accordion-body').each(function () {
 		if ($(this).hasClass('in')) {
 			$('[href="#' + $(this).attr('id') + '"]').addClass('accordion-unfolded').removeClass('accordion-folded');
 		}
@@ -37,7 +37,7 @@
 		}
 	});
 
-	$('.accordion-toggle').on('click', function(){
+	$('.accordion-toggle').on('click', function () {
 		if ($($(this).attr('href')).hasClass('in')) {
 			$(this).addClass('accordion-folded').removeClass('accordion-unfolded');
 		}
@@ -46,4 +46,9 @@
 		}
 	});
 })(jQuery);
+
+/*
+ Make the code examples pretty.
+ */
+window.prettyPrint && prettyPrint();
 

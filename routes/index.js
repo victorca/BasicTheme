@@ -4,4 +4,6 @@ module.exports 	= function (app) {
 
 	app.get('/basic/typography', require('./basic/typography.js').index);
 	app.get('/basic/tables/data', require('./basic/tables.js').data);
+
+	app.get('/basic/navigation/breadcrumbs', require('./basic/navigation.js').breadcrumbs);
 };
