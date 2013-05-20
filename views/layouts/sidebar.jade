@@ -1,0 +1,189 @@
+.widget.logged-user-info
+	.widget-content
+		.pull-left
+			img(src="/images/logo.jpg")
+
+		ul
+			li John Doe
+			li
+				small
+					em as Administrator
+			li
+				small
+					em Last access: 23 Jun 14:30
+
+		.btn-group
+			button.btn.btn-small.btn-info Messages
+			button.btn.btn-small.btn-info Profile
+			button.btn.btn-small.btn-danger Logout
+
+ul.nav.nav-tabs.nav-stacked
+	li(class=(page == 'basic/index' ?'active':''))
+		a.border-radius-none(href=(page == 'basic/index' ?'#':'/basic'))
+			i.icon-home(class=(page == 'basic/index' ?'icon-white':''))
+			| Dashboard
+			i.accordion-level.icon-chevron-right.pull-right(class=(page == 'basic/index' ?'icon-white':''))
+
+	li(class=(page == 'basic/typography' ?'active':''))
+		a.border-radius-none(href="/basic/typography")
+			i.icon-text-width(class=(page == 'basic/typography' ?'icon-white':''))
+			| Typography
+			i.accordion-level.icon-chevron-right.pull-right(class=(page == 'basic/typography' ?'icon-white':''))
+
+	li
+		div.accordion-group.border-radius-none.margin-bottom-none
+			div.accordion-heading
+				a.accordion-toggle(data-toggle="collapse",href="#messaging")
+					i.icon-comment
+					| Messaging
+					i.accordion-level.icon-chevron-right.pull-right
+
+			#messaging.accordion-body.collapse
+				a.border-radius-none(href="/basic/messaging/labels-badges")
+					.accordion-inner
+						i.icon-tags
+						| Labels & Badges
+
+				a.border-radius-none(href="/basic/messaging/tooltips")
+					.accordion-inner
+						i.icon-comment
+						| Tooltips
+
+				a.border-radius-none(href="/basic/messaging/popovers")
+					.accordion-inner
+						i.icon-comment
+						| Popovers
+
+				a.border-radius-none(href="/basic/messaging/alerts")
+					.accordion-inner
+						i.icon-warning-sign
+						| Alerts
+
+				a.border-radius-none(href="/basic/messaging/growl")
+					.accordion-inner
+						i.icon-align-justify
+						| Growl Notifications
+
+	li(class=(page == 'basic/tables/data' ?'active':''))
+		.accordion-group.border-radius-none.margin-bottom-none
+			.accordion-heading
+				a.accordion-toggle(data-toggle="collapse",href="#tables")
+					i.icon-table(class=(page == 'basic/tables/data' ?'icon-white':''))
+					| Tables
+					i.accordion-level.icon-chevron-right.pull-right(class=(page == 'basic/tables/data' ?'icon-white':''))
+
+			#tables.accordion-body.collapse(class=(page == 'basic/tables/data' ?'in':''))
+				a.border-radius-none(href="/basic/tables/simple")
+					.accordion-inner
+						i.icon-th
+						| Simple Tables
+
+				a.border-radius-none(href="/basic/tables/data",class=(page == 'basic/tables/data' ?'active':''))
+					.accordion-inner
+						i.icon-th-large
+						| DataTables
+
+				a.border-radius-none(href="/basic/tables/media")
+					.accordion-inner
+						i.icon-th-list
+						| Media Tables
+	li
+		.accordion-group.border-radius-none.margin-bottom-none
+			.accordion-heading
+				a.accordion-toggle(data-toggle="collapse",href="#navigation")
+					i.icon-th
+					| Navigation
+					i.accordion-level.icon-chevron-right.pull-right
+
+			#navigation.accordion-body.collapse
+				a.border-radius-none(href="/basic/navigation/breadcrumbs")
+					.accordion-inner
+						i.icon-bookmark
+						| Breadcrumbs
+
+				a.border-radius-none(href="/basic/navigation/tabs")
+					.accordion-inner
+						i.icon-th-list
+						| Tabs
+
+				a.border-radius-none(href="/basic/navigation/pills")
+					.accordion-inner
+						i.icon-th-list
+						| Pills
+
+				a.border-radius-none(href="/basic/navigation/collapsibles")
+					.accordion-inner
+						i.icon-align-justify
+						| Collapsibles
+
+				a.border-radius-none(href="/basic/navigation/pagination")
+					.accordion-inner
+						i.icon-th-list
+						| Pagination
+
+	li
+		.accordion-group.border-radius-none.margin-bottom-none
+			.accordion-heading
+				a.accordion-toggle(data-toggle="collapse",href="#grid")
+					i.icon-th
+					| Grid
+					i.accordion-level.icon-chevron-right.pull-right
+
+			#grid.accordion-body.collapse
+				a.border-radius-none(href="/basic/grid/content")
+					.accordion-inner
+						i.icon-th-large
+						| Content Grid
+
+				a.border-radius-none(href="/basic/grid/form")
+					.accordion-inner
+						i.icon-th-list
+						| Form Grid
+
+				a.border-radius-none(href="/basic/grid/media")
+					.accordion-inner
+						i.icon-th-list
+						| Media Grid
+
+	li
+		.accordion-group.border-radius-none.margin-bottom-none
+			.accordion-heading
+				a.accordion-toggle(data-toggle="collapse",href="#charts")
+					i.icon-bar-chart
+					| Charts
+					i.accordion-level.icon-chevron-right.pull-right
+
+			#charts.accordion-body.collapse
+				a.border-radius-none(href="/basic/charts/statistics")
+					.accordion-inner
+						i.icon-bar-chart
+						| Statistics Elements
+
+				a.border-radius-none(href="/basic/charts/charts")
+					.accordion-inner
+						i.icon-bar-chart
+						| Charts
+
+	li
+		.accordion-group.border-radius-none.margin-bottom-none
+			.accordion-heading
+				a.accordion-toggle(data-toggle="collapse",href="#images")
+					i.icon-picture
+					| Images
+					i.accordion-level.icon-chevron-right.pull-right
+
+			#images.accordion-body.collapse
+				a.border-radius-none(href="/basic/images/icons")
+					.accordion-inner
+						i.icon-th-large
+						| Icons
+
+				a.border-radius-none(href="/basic/images/thumbnails")
+					.accordion-inner
+						i.icon-stop
+						| Thumbnails
+
+				a.border-radius-none(href="/basic/images/gallery")
+					.accordion-inner
+						i.icon-th
+						| Gallery

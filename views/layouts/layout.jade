@@ -1,0 +1,35 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible",content="IE=edge,chrome=1")
+		meta(name="description",content="")
+		meta(name="viewport",content="width=device-width,initial-scale=1.0")
+
+		title Plains Field Theme
+
+		link(rel="stylesheet",href="/css/vendor/normalize.css")
+
+		block styles
+
+		link(rel="stylesheet",href="/css/main.css")
+		link(rel="stylesheet",href="/js/vendor/bootstrap/css/bootstrap.min.css",media="screen")
+
+		script(src="/js/vendor/modernizr-2.6.2.min.js")
+
+	body
+		include ./navbar
+
+		.container-fluid.padding-none
+			.row-fluid
+				.span12
+					include ./breadcrumbs
+
+			.row-fluid
+				.span2.sidebar
+					include ./sidebar
+
+				.span10.content
+					block content
+
+		include ./scripts

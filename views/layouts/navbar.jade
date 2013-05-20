@@ -1,0 +1,28 @@
+.navbar.navbar-fixed-top.navbar-inverse
+	.navbar-inner.padding-none.row-fluid
+		a.brand.span2(href="#") Put logo here!
+
+		ul.nav
+			li(class=(page == 'basic/index' || page == 'basic/tables/data' || page == 'basic/typography' ?'active':''))
+				a(href="#") Basic Elements
+			li
+				a(href="forms.html") Form Components
+			li
+				a(href="templates.html") Standalone Templates
+
+		ul.nav.user-bar.pull-right
+			li.dropdown
+				a.dropdown-toggle(data-toggle="dropdown",href="#") Notifications
+					b.caret
+				ul.dropdown-menu(role="menu")
+					li
+						a(href="#") One Link
+					li.divider
+
+					li
+						a(href="#") Other Link
+
+			li
+				button.btn.btn-info Settings
+			li
+				button.btn.btn-danger Log out
