@@ -1,99 +1,99 @@
 Basic Elements
 ============================
 
-Dashboard
+* Dashboard
 
-B/Typography
+* B/Typography
 
-Messaging
-B/	Labels & Badges
-B/	Tooltips
-B/	Popovers
-B/	Alerts
-	Growl Notifications
+* Messaging
+	+ B/	Labels & Badges
+	+ B/	Tooltips
+	+ B/	Popovers
+	+ B/	Alerts
+	+ Growl Notifications
 
-Tables
-B/	Simple tables
-	Data tables
-	Media tables
+* Tables
+	+ B/	Simple tables
+	+ 	Data tables
+	+ 	Media tables
 
-Navigation
-B/	Breadcrumbs
-B/	Tabs
-B/	Pills
-B/	Collapsibles
-B/	Pagination
+* Navigation
+	+ B/	Breadcrumbs
+	+ B/	Tabs
+	+ B/	Pills
+	+ B/	Collapsibles
+	+ B/	Pagination
 
-Grid
-B/	Content Grid
-	Form Grid
-	Media Grid
+* Grid
+	+ B/	Content Grid
+	+ 	Form Grid
+	+ 	Media Grid
 
-Charts
-	Statistics Elements
-	Charts
+* Charts
+	+ 	Statistics Elements
+	+ 	Charts
 
-Images
-B/	Icons
-B/	Thumbnails
-	Gallery
+* Images
+	+ B/	Icons
+	+ B/	Thumbnails
+	+ 	Gallery
 
 Forms
 ============================
 
-Basic Elements
-	Input Fields
-	Textarea
-B/	Checkboxes
-B/	Radiobuttons
-B/	Buttons
-	Select
+* Basic Elements
+	+ 	Input Fields
+	+ 	Textarea
+	+ B/	Checkboxes
+	+ B/	Radiobuttons
+	+ B/	Buttons
+	+ 	Select
 
-Advanced Elements
-	Sliders
-B/	Progress Bars
-	Spinner
-	Datetimepicker
-	Colorpicker
-	Rich Text Editors (WYSIWYG)
+* Advanced Elements
+	+ 	Sliders
+	+ B/	Progress Bars
+	+ 	Spinner
+	+ 	Datetimepicker
+	+ 	Colorpicker
+	+ 	Rich Text Editors (WYSIWYG)
 
-Global Styles
-	Vertical Aligned
-	Horizontal Aligned
+* Global Styles
+	+ 	Vertical Aligned
+	+ 	Horizontal Aligned
 
-Wizards
+* Wizards
 
-Validation
+* Validation
 
 Standalone Templates
 ============================
 
-Login Pages
-B/	Login
-	Recover Password
-	Sign Up
+* Login Pages
+	+ B/	Login
+	+ 	Recover Password
+	+ 	Sign Up
 
-Error Pages
-	403
-	404
-	405
-	500
-	503
+* Error Pages
+	+ 	403
+	+ 	404
+	+ 	405
+	+ 	500
+	+ 	503
 
-Email Templates
-	Forgot Password
-	Notification
-	Registration Confirmation
+* Email Templates
+	+ 	Forgot Password
+	+ 	Notification
+	+ 	Registration Confirmation
 
-Invoices
+* Invoices
 
-Offline Page
+* Offline Page
 
-FAQ
+* FAQ
 
-Search
+* Search
 
 TODO: To organize
 ============================
 
-Scroll
+* Scroll
