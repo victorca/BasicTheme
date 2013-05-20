@@ -5,29 +5,29 @@ Basic Elements
 
 Dashboard
 
-Typography
+B/Typography
 
 Messaging
-	Labels & Badges
-	Tooltips
-	Popovers
-	Alerts
+B/	Labels & Badges
+B/	Tooltips
+B/	Popovers
+B/	Alerts
 	Growl Notifications
 
 Tables
-	Simple tables
+B/	Simple tables
 	Data tables
 	Media tables
 
 Navigation
-	Breadcrumbs
-	Tabs
-	Pills
-	Collapsibles
-	Pagination
+B/	Breadcrumbs
+B/	Tabs
+B/	Pills
+B/	Collapsibles
+B/	Pagination
 
 Grid
-	Content Grid
+B/	Content Grid
 	Form Grid
 	Media Grid
 
@@ -36,8 +36,8 @@ Charts
 	Charts
 
 Images
-	Icons
-	Thumbnails
+B/	Icons
+B/	Thumbnails
 	Gallery
 
 ============================
@@ -47,14 +47,14 @@ Forms
 Basic Elements
 	Input Fields
 	Textarea
-	Checkboxes
-	Radiobuttons
-	Buttons
+B/	Checkboxes
+B/	Radiobuttons
+B/	Buttons
 	Select
 
 Advanced Elements
 	Sliders
-	Progress Bars
+B/	Progress Bars
 	Spinner
 	Datetimepicker
 	Colorpicker
@@ -73,7 +73,7 @@ Standalone Templates
 ============================
 
 Login Pages
-	Login
+B/	Login
 	Recover Password
 	Sign Up
 
