@@ -445,14 +445,14 @@ code {
 	display       : inline-block;
 	float         : none;
 	margin-bottom : -0.2em;
-	margin-right: 0;
+	margin-right  : 0;
 	position      : relative;
 }
 
 .cf-tabs.cf-tabs-f > ul > li a {
 	background-color : transparent !important;
 	border           : none !important;
-	margin-right: 0;
+	margin-right     : 0;
 }
 
 .cf-tabs.cf-tabs-f > ul > li.active {
@@ -484,15 +484,57 @@ code {
  -------------------------------------------------------------- */
 .cf-tabs.cf-tabs-fb > ul {
 	background-color : #f5f5f5;
-	border-top: 3px double #cccccc;
+	border-top       : 3px double #cccccc;
 }
+
 /* =Tabs. F. Background in selected tab.
  -------------------------------------------------------------- */
 .cf-tabs.cf-tabs-fb.cf-tabs-fb-libg > ul > li.active {
 	background-color : #efefef;
 }
+
 /* =TODO: Tabs. Quick lists.
  -------------------------------------------------------------- */
 .cf-tabs.cf-tabs-fb.cf-tabs-quick-list {
 
+}
+
+/* =Tabs. Vertical Tabs.
+ -------------------------------------------------------------- */
+.cf-tabs.tabs-left > ul > li {
+	margin-right : 0;
+}
+
+.cf-tabs.tabs-left.tabs-left-b > ul {
+	border-right-color: #d3d3d3;
+	padding-right : 0.7em;
+}
+
+.cf-tabs.tabs-left.tabs-left-b > ul > li {
+	border       : 1px solid transparent;
+	margin-right : 0;
+	margin-bottom: 0.3em;
+}
+.cf-tabs.tabs-left.tabs-left-b > ul > li a {
+	padding-bottom: 9px;
+	padding-top: 7px;
+}
+.cf-tabs.tabs-left.tabs-left-b > ul > li.active {
+}
+.cf-tabs.tabs-left.tabs-left-b > ul > li.active a {
+	background-image : -moz-linear-gradient(center top, #ffffff, #ffffff 25%, #e6e6e6);
+	border           : 1px solid #a5a0a0 !important;
+	border-radius    : 4px;
+}
+
+.cf-tabs.tabs-left.tabs-left-b > ul > li a:hover {
+	background-color: #E6E6E6;
+	background-image: -moz-linear-gradient(center top , #FFFFFF, #FFFFFF 25%, #E6E6E6);
+	background-repeat: no-repeat;
+	border-color: #CCCCCC #CCCCCC #BBBBBB;
+	border-radius: 4px 4px 4px 4px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 1px 2px 0 #B5B5B5;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
 }
