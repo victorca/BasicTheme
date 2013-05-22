@@ -87,13 +87,14 @@ ul.nav.nav-tabs.nav-stacked
 					.accordion-inner
 						i.icon-th-list
 						| Media Tables
-	li
+
+	li(class=(page == 'basic/navigation/tabs' ?'active':''))
 		.accordion-group.border-radius-none.margin-bottom-none
 			.accordion-heading
 				a.accordion-toggle(data-toggle="collapse",href="#navigation")
-					i.icon-th
+					i.icon-th(class=(page == 'basic/navigation/tabs' ?'icon-white':''))
 					| Navigation
-					i.accordion-level.icon-chevron-right.pull-right
+					i.accordion-level.icon-chevron-right.pull-right(class=(page == 'basic/navigation/tabs' ?'icon-white':''))
 
 			#navigation.accordion-body.collapse
 				a.border-radius-none(href="/basic/navigation/breadcrumbs")
