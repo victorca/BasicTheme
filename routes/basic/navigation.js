@@ -10,5 +10,11 @@ module.exports = {
 			title: 'Express',
 			page : 'basic/navigation/tabs'
 		});
+	},
+	pills: function (req, res) {
+		res.render('basic/navigation/pills', {
+			title: 'Express',
+			page : 'basic/navigation/pills'
+		});
 	}
 };

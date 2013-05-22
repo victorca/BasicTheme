@@ -105,3 +105,5 @@ To organize
 * Scroll
 
 * Second level tabs
+
+* Tabs: support for headings in tabbar.
