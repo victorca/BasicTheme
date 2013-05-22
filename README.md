@@ -38,6 +38,12 @@ Basic Elements
 	+ B/	Thumbnails
 	+ 	Gallery
 
+Advanced Elements
+============================
+
+* Widgets
+	+  Quicklists
+
 Forms
 ============================
 
@@ -97,7 +103,5 @@ To organize
 ============================
 
 * Scroll
-* Misc
-* Quicklists (Tabs & Widgets)
-* Widgets
+
 * Second level tabs
