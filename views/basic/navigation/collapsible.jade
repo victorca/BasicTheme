@@ -1,0 +1,86 @@
+extends ../../layouts/layout
+
+block content
+	.content-header
+		.content-header-title
+			h2 Collapsible (Accordions)
+			span.description A single example shown as it might be displayed across multiple pages.
+
+	.row-fluid
+		.span6
+			#accordion-a.accordion
+				.accordion-group
+					.accordion-heading
+						a.accordion-toggle(data-toggle='collapse', data-parent='#accordion-a', href='#collapse-a-0')
+							| Collapsible Group Item #1
+					#collapse-a-0.accordion-body.collapse.in
+						.accordion-inner
+							| Anim pariatur cliche...
+				.accordion-group
+					.accordion-heading
+						a.accordion-toggle(data-toggle='collapse', data-parent='#accordion-a', href='#collapse-a-1')
+							| Collapsible Group Item #2
+					#collapse-a-1.accordion-body.collapse
+						.accordion-inner
+							| Anim pariatur cliche...
+				.accordion-group
+					.accordion-heading
+						a.accordion-toggle(data-toggle='collapse', data-parent='#accordion-a', href='#collapse-a-2')
+							| Collapsible Group Item #3
+					#collapse-a-2.accordion-body.collapse
+						.accordion-inner
+							| Anim pariatur cliche...
+
+
+		.span6
+			.accordion
+				.accordion-group
+					.accordion-heading
+						a.accordion-toggle(data-toggle='collapse',href='#collapse-b-0')
+							| Collapsible Group Item #1
+					#collapse-b-0.accordion-body.collapse.in
+						.accordion-inner
+							| Anim pariatur cliche...
+				.accordion-group
+					.accordion-heading
+						a.accordion-toggle(data-toggle='collapse',href='#collapse-b-1')
+							| Collapsible Group Item #2
+					#collapse-b-1.accordion-body.collapse
+						.accordion-inner
+							| Anim pariatur cliche...
+				.accordion-group
+					.accordion-heading
+						a.accordion-toggle(data-toggle='collapse',href='#collapse-b-2')
+							| Collapsible Group Item #3
+					#collapse-b-2.accordion-body.collapse
+						.accordion-inner
+							| Anim pariatur cliche...
+
+	.row-fluid
+		.span6
+			.accordion.cf-accordion
+				.accordion-group
+					.accordion-heading
+						a.accordion-toggle(data-toggle='collapse',href='#collapse-ba-0')
+							i.icon-home
+							| Collapsible Group Item #1
+					#collapse-ba-0.accordion-body.collapse.in
+						.accordion-inner
+							| Anim pariatur cliche...
+				.accordion-group
+					.accordion-heading
+						a.accordion-toggle(data-toggle='collapse',href='#collapse-ba-1')
+							i.icon-plus
+							| Collapsible Group Item #2
+					#collapse-ba-1.accordion-body.collapse
+						.accordion-inner
+							| Anim pariatur cliche...
+				.accordion-group
+					.accordion-heading
+						a.accordion-toggle(data-toggle='collapse',href='#collapse-ba-2')
+							i.icon-minus
+							| Collapsible Group Item #3
+					#collapse-ba-2.accordion-body.collapse
+						.accordion-inner
+							| Anim pariatur cliche...
+
