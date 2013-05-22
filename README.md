@@ -93,7 +93,11 @@ Standalone Templates
 
 * Search
 
-TODO: To organize
+To organize
 ============================
 
 * Scroll
+* Misc
+* Quicklists (Tabs & Widgets)
+* Widgets
+* Second level tabs
