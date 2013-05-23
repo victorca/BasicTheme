@@ -10,5 +10,11 @@ module.exports = {
 			title: 'Express',
 			page : 'forms/styles/vertical'
 		});
+	},
+	inline  : function (req, res) {
+		res.render('forms/styles/inline', {
+			title: 'Express',
+			page : 'forms/styles/inline'
+		});
 	}
 };
