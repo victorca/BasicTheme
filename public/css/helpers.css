@@ -12,6 +12,9 @@
 .border-top-none {
 	border-top: none !important;
 }
+.border-bottom-none {
+	border-bottom: none !important;
+}
 .border-radius-none {
 	border-radius: 0 !important;
 }

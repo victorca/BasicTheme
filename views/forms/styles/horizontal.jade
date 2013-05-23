@@ -1,0 +1,113 @@
+extends ../../layouts/layout
+
+block sidebar
+	include ../layouts/sidebar
+
+block content
+	.content-header
+		.content-header-title
+			h2 Page Title
+			span.description Page description goes here.
+
+	.row-fluid
+		.span12
+			form.form-horizontal(action='#')
+				legend Text fields
+				.row-fluid
+					.span4.form-control-label
+						label(for='text') Input type text
+					.span8.form-controls
+						label
+							input#text(type="text",value="some text value...")
+							span.description.help-inline Some explanatory text here.
+
+				.row-fluid
+					.span4.form-control-label
+						label(for='password') Inpyt type password
+					.form-controls.span8
+						input#password(type="password",value="123123123")
+
+				.row-fluid
+					.span4.form-control-label
+						label(for='readonly') Readonly input
+					.form-controls.span8
+						input#readonly(type="text",readonly="readonly",value="readonly input field...")
+
+				.row-fluid
+					.span4.form-control-label
+						label(for='disabled') Disabled input
+					.form-controls.span8
+						label
+							input#disabled.span12(type="text",disabled="disabled",value="disabled input field...")
+							span.description.help-block Some explanatory text here.
+
+				.row-fluid
+					.span4.form-control-label
+						label(for='placeholder') Placeholder
+					.form-controls.span8
+						input#placeholder.span12(type="text",placeholder="Placeholder...")
+
+				.row-fluid
+					.span4.form-control-label
+						label(for="textarea") Textarea field
+							br
+							span.description Some explanation here.
+					.form-controls.span8
+						textarea#textarea.span6(name="textarea") Some text in textarea field...
+
+				.row-fluid
+					.span4.form-control-label
+						label(for='textareap') Textarea placeholder
+					.form-controls.span8
+						textarea#textareap.span12(placeholder="Textarea field placeholder...",name="textarea")
+
+	.row-fluid
+		.span12
+			form.form-horizontal.cf-double-box(action='#')
+				fieldset
+					legend.span12 Text fields
+
+					.row-fluid
+						.span4.form-control-label
+							label(for='text') Input type text
+						.span8.form-controls
+							input#text(type="text",value="some text value...")
+
+					.row-fluid
+						.span4.form-control-label
+							label(for='password') Inpyt type password
+						.form-controls.span8
+							input#password(type="password",value="123123123")
+
+					.row-fluid
+						.span4.form-control-label
+							label(for='readonly') Readonly input
+						.form-controls.span8
+							input#readonly(type="text",readonly="readonly",value="readonly input field...")
+
+					.row-fluid
+						.span4.form-control-label
+							label(for='disabled') Disabled input
+						.form-controls.span8
+							input#disabled.span12(type="text",disabled="disabled",value="disabled input field...")
+
+					.row-fluid
+						.span4.form-control-label
+							label(for='placeholder') Placeholder
+						.form-controls.span8
+							input#placeholder.span12(type="text",placeholder="Placeholder...")
+
+				fieldset
+					legend.span12 Textarea fields
+
+					.row-fluid
+						.span4.form-control-label
+							label(for="textarea") Textarea field
+						.form-controls.span8
+							textarea#textarea.span6(name="textarea", rows="5") Some text in textarea field...
+
+					.row-fluid
+						.span4.form-control-label
+							label(for='textareap') Textarea placeholder
+						.form-controls.span8
+							textarea#textareap.span12(placeholder="Textarea field placeholder...",name="textarea", rows="6")

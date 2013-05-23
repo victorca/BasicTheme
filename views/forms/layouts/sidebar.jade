@@ -1,0 +1,58 @@
+.widget.logged-user-info
+	.widget-content
+		.pull-left
+			img(src="/images/icons/person.svg")
+
+		ul
+			li John Doe
+			li
+				small
+					em as Administrator
+			li
+				small
+					em Last access: 23 Jun 14:30
+
+		.btn-group
+			button.btn.btn-small.btn-info Messages
+			button.btn.btn-small.btn-info Profile
+			button.btn.btn-small.btn-danger Logout
+
+ul.nav.nav-tabs.nav-stacked
+	li(class=(page == 'forms/index' ?'active':''))
+		a.border-radius-none(href=(page == 'forms/index' ?'#':'/forms'))
+			i.icon-home(class=(page == 'forms/index' ?'icon-white':''))
+			| Dashboard
+
+	li
+		div.accordion-group.border-radius-none.margin-bottom-none
+			div.accordion-heading
+				a.accordion-toggle(data-toggle="collapse",href="#styles")
+					i.icon-comment
+					| Global Styles
+					i.accordion-level.icon-chevron-right.pull-right
+
+			#styles.accordion-body.collapse
+				a.border-radius-none(href="/forms/styles/horizontal")
+					.accordion-inner
+						i.icon-tags
+						| Horizontal Form
+
+				a.border-radius-none(href="/forms/styles/vertical")
+					.accordion-inner
+						i.icon-comment
+						| Vertical Form
+
+				a.border-radius-none(href="/forms/styles/inline")
+					.accordion-inner
+						i.icon-comment
+						| Inline Form
+
+	li
+		a.border-radius-none(href="/forms/basic")
+			i.icon-home(class=(page == 'forms/basic/index' ?'icon-white':''))
+			| Basic Elements
+
+	li
+		a.border-radius-none(href="/forms/advanced")
+			i.icon-home(class=(page == 'forms/advanced/index' ?'icon-white':''))
+			| Advanced Elements

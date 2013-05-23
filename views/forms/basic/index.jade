@@ -1,0 +1,21 @@
+extends ../../layouts/layout
+
+block sidebar
+	include ../layouts/sidebar
+
+block content
+	.content-header.margin-bottom-none
+		.content-header-title
+			h2 Tabs
+			span.description A single example shown as it might be displayed across multiple pages.
+
+	.cf-tabs.cf-tabs-f.cf-tabs-fb
+		ul.nav.nav-tabs.border-top-none
+			li.active
+				a(href='#style-h',data-toggle='tab') Horizontal Style
+			li
+				a(href='#style-v',data-toggle='tab') Vertical Style
+
+		.tab-content
+			.tab-pane.active#style-h
+			.tab-pane#style-v

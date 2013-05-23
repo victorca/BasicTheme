@@ -1,43 +1,3 @@
-Basic Elements
-============================
-
-* Dashboard
-
-* B/Typography
-
-* Messaging
-	+ B/	Labels & Badges
-	+ B/	Tooltips
-	+ B/	Popovers
-	+ B/	Alerts
-	+ Growl Notifications
-
-* Tables
-	+ B/	Simple tables
-	+ 	Data tables
-	+ 	Media tables
-
-* Navigation
-	+ B/	Breadcrumbs
-	+ B/	Tabs
-	+ B/	Pills
-	+ B/	Collapsibles
-	+ B/	Pagination
-
-* Grid
-	+ B/	Content Grid
-	+ 	Form Grid
-	+ 	Media Grid
-
-* Charts
-	+ 	Statistics Elements
-	+ 	Charts
-
-* Images
-	+ B/	Icons
-	+ B/	Thumbnails
-	+ 	Gallery
-
 Advanced Elements
 ============================
 
@@ -46,6 +6,10 @@ Advanced Elements
 
 Forms
 ============================
+
+* Global Styles
+	+ 	Vertical Aligned
+	+ 	Horizontal Aligned
 
 * Basic Elements
 	+ 	Input Fields
@@ -62,10 +26,6 @@ Forms
 	+ 	Datetimepicker
 	+ 	Colorpicker
 	+ 	Rich Text Editors (WYSIWYG)
-
-* Global Styles
-	+ 	Vertical Aligned
-	+ 	Horizontal Aligned
 
 * Wizards
 
@@ -107,3 +67,9 @@ To organize
 * Second level tabs
 
 * Tabs: support for headings in tabbar.
+
+* Pricing table
+
+* Maps
+	+ Google Maps
+	+ Vector Maps

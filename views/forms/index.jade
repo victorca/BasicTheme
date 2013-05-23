@@ -1,7 +1,7 @@
-extends ../../layouts/layout
+extends ../layouts/layout
 
 block sidebar
-	include ../layouts/sidebar
+	include ./layouts/sidebar
 
 block content
 		.content-header
@@ -10,4 +10,6 @@ block content
 				span.description Page description goes here.
 
 		.row-fluid
-			.span12
+			.span6.box
+				.box-header Box Header
+				.box-content Box Content

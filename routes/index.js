@@ -1,5 +1,9 @@
-module.exports 	= function (app) {
+module.exports = function (app) {
 	app.get('/', require('./basic/index.js').index);
+
+	/*
+	 Basic.
+	 */
 	app.get('/basic', require('./basic/index.js').index);
 
 	app.get('/basic/typography', require('./basic/typography.js').index);
@@ -11,4 +15,12 @@ module.exports 	= function (app) {
 	app.get('/basic/navigation/tabs', require('./basic/navigation.js').tabs);
 	app.get('/basic/navigation/pills', require('./basic/navigation.js').pills);
 	app.get('/basic/navigation/collapsible', require('./basic/navigation.js').collapsible);
+
+	/*
+	 Forms.
+	 */
+	app.get('/forms', require('./forms/index.js').index);
+	app.get('/forms/basic', require('./forms/basic.js').index);
+	app.get('/forms/styles/horizontal', require('./forms/styles.js').horizontal);
+	app.get('/forms/styles/vertical', require('./forms/styles.js').vertical);
 };

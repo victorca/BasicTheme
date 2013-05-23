@@ -161,10 +161,11 @@ table caption + thead tr th {
 /* =Content.
  -------------------------------------------------------------- */
 .content {
-	border-left : 4px double #dddddd;
-	margin      : 0 !important;
-	padding     : 0 2.6em 0 2.6em !important;
-	width       : 85% !important;
+	background-color : #f4f4f4;
+	border-left      : 4px double #dddddd;
+	margin           : 0 !important;
+	padding          : 0 2.6em 0 2.6em !important;
+	width            : 85% !important;
 }
 
 /* =Content. Header.
@@ -243,6 +244,7 @@ table caption + thead tr th {
 }
 
 .box .box-content {
+	background-color           : white;
 	border                     : 1px solid #dddddd;
 	border-top                 : 0;
 	border-bottom-left-radius  : 4px;
@@ -556,12 +558,14 @@ code {
 /* =Pills.
  -------------------------------------------------------------- */
 .cf-pills .box-header {
-	padding-top: 0.3em;
-	padding-bottom: 0.3em;
+	padding-top    : 0.3em;
+	padding-bottom : 0.3em;
 }
+
 .cf-pills .box-header > ul {
-	margin-bottom: 0 ;
+	margin-bottom : 0;
 }
+
 /* =Pills. Icons.
  -------------------------------------------------------------- */
 .cf-pills ul > li i {
@@ -572,13 +576,15 @@ code {
 .cf-pills ul > li.active i, .cf-pills ul > li a:hover i {
 	opacity : 1;
 }
+
 /* =Accordions.
  -------------------------------------------------------------- */
 .accordion .accordion-heading > a {
-	background-image: linear-gradient(to bottom, #FFFFFF, #F2F2F2);
-	border-top-right-radius: 3px;
-	border-top-left-radius: 3px;
+	background-image        : linear-gradient(to bottom, #ffffff, #f2f2f2);
+	border-top-right-radius : 3px;
+	border-top-left-radius  : 3px;
 }
+
 /* =Accordions. Icons.
  -------------------------------------------------------------- */
 .accordion .accordion-heading > a i {
@@ -586,6 +592,91 @@ code {
 	opacity      : 0.5;
 }
 
-.accordion .accordion-heading > .accordion-unfolded i,.accordion .accordion-heading > a:hover i {
+.accordion .accordion-heading > .accordion-unfolded i, .accordion .accordion-heading > a:hover i {
 	opacity : 1 !important;
+}
+
+/* =Forms. Horizontal.
+ -------------------------------------------------------------- */
+form {
+	background-color : white;
+}
+
+form legend {
+	background-image        : linear-gradient(to bottom, #ffffff, #f2f2f2);
+	border                  : 1px solid #dddddd;
+	border-top-left-radius  : 4px;
+	border-top-right-radius : 4px;
+	font-size               : 14px !important;
+	line-height             : 1.4 !important;
+	margin                  : 0;
+	padding                 : 0.6em 1.4em;
+	width                   : auto;
+}
+
+form .row-fluid {
+	background-color : white;
+	border-left      : 1px solid #dddddd;
+	border-right     : 1px solid #dddddd;
+	border-bottom    : 1px dotted #dddddd !important;
+	width            : auto;
+}
+
+form .row-fluid:hover {
+	background-color : #f6f6f6;
+}
+
+form .row-fluid:last-child {
+	border-bottom-style        : solid !important;
+	border-bottom-left-radius  : 4px;
+	border-bottom-right-radius : 4px;
+}
+
+form .row-fluid .form-control-label {
+	margin     : 0;
+	padding    : 1.5em 1.4em;
+	text-align : left;
+}
+
+form.form-horizontal .row-fluid .form-control-label label {
+	font-weight : bold;
+	color       : #545454;
+}
+
+form.form-horizontal .row-fluid .form-controls {
+	border-left : 1px dotted #dddddd;
+	padding     : 1.3em 1em;
+	text-align  : left;
+}
+
+.cf-double-box {
+	background-color : #8eb8be;
+	border           : 1px solid #dddddd;
+	border-radius    : 4px;
+	padding          : 0.5em;
+}
+
+.cf-double-box fieldset + fieldset {
+	margin-top : 0.5em;
+}
+
+form label .description, form .form-controls .description {
+	font-style : normal;
+	font-size  : 1em;
+}
+
+/* =Forms. Default: Vertical.
+ -------------------------------------------------------------- */
+form.form-vertical .row-fluid .form-control-label {
+	padding : 1em 1.1em 0.3em;
+}
+
+form.form-vertical .row-fluid .form-controls {
+	margin-left : 0;
+	padding     : 0 1em;
+}
+
+form.form-vertical .row-fluid .form-controls .help-inline {
+	margin-top     : 0.4em;
+	vertical-align : top;
 }
