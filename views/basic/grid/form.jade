@@ -1,0 +1,133 @@
+extends ../../layouts/layout
+
+block sidebar
+	include ../layouts/sidebar
+
+block content
+	.content-header
+		.content-header-title
+			h2 Breadcrumbs Examples
+			span.description A single example shown as it might be displayed across multiple pages.
+
+	h2 Block level input
+
+	form
+		input.input-block-level(type="text",placeholder=".input-block-level")
+
+	h2 Relative sizing
+
+	form
+		input.input-mini(type="text",placeholder=".input-mini")
+		br
+		input.input-small(type="text",placeholder=".input-small")
+		br
+		input.input-medium(type="text",placeholder=".input-medium")
+		br
+		input.input-large(type="text",placeholder=".input-large")
+		br
+		input.input-xlarge(type="text",placeholder=".input-xlarge")
+		br
+		input.input-xxlarge(type="text",placeholder=".input-xxlarge")
+
+
+	h2 Grid sizing
+
+	form
+		input.span1(type="text",placeholder=".span1")
+		br
+		input.span2(type="text",placeholder=".span2")
+		br
+		input.span3(type="text",placeholder=".span3")
+		br
+
+		select.span1
+			option(value="1") 1
+			option(value="2") 2
+			option(value="3") 3
+			option(value="4") 4
+			option(value="5") 5
+
+		br
+		select.span2
+			option(value="1") 1
+			option(value="2") 2
+			option(value="3") 3
+			option(value="4") 4
+			option(value="5") 5
+
+		br
+		select.span3
+			option(value="1") 1
+			option(value="2") 2
+			option(value="3") 3
+			option(value="4") 4
+			option(value="5") 5
+
+	h2
+
+	form
+		.row-fluid
+			.span11
+				input.span12(type="text", placeholder=".span11")
+			.span1
+				input.span12(type="text", placeholder=".span1")
+
+		.row-fluid
+			.span10
+				input.span12(type="text", placeholder=".span10")
+			.span2
+				input.span12(type="text", placeholder=".span2")
+
+		.row-fluid
+			.span9
+				input.span12(type="text", placeholder=".span9")
+			.span3
+				input.span12(type="text", placeholder=".span3")
+
+		.row-fluid
+			.span8
+				input.span12(type="text", placeholder=".span8")
+			.span4
+				input.span12(type="text", placeholder=".span4")
+
+		.row-fluid
+			.span7
+				input.span12(type="text", placeholder=".span7")
+			.span5
+				input.span12(type="text", placeholder=".span3")
+
+		.row-fluid
+			.span6
+				input.span12(type="text", placeholder=".span6")
+			.span6
+				input.span12(type="text", placeholder=".span6")
+
+		.row-fluid
+			.span5
+				input.span12(type="text", placeholder=".span5")
+			.span7
+				input.span12(type="text", placeholder=".span7")
+
+		.row-fluid
+			.span4
+				input.span12(type="text", placeholder=".span4")
+			.span8
+				input.span12(type="text", placeholder=".span8")
+
+		.row-fluid
+			.span3
+				input.span12(type="text", placeholder=".span3")
+			.span9
+				input.span12(type="text", placeholder=".span9")
+
+		.row-fluid
+			.span2
+				input.span12(type="text", placeholder=".span2")
+			.span10
+				input.span12(type="text", placeholder=".span10")
+
+		.row-fluid
+			.span1
+				input.span12(type="text", placeholder=".span1")
+			.span11
+				input.span12(type="text", placeholder=".span11")
