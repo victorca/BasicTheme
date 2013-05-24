@@ -19,8 +19,9 @@ module.exports = function (app) {
 	/*
 	 Forms.
 	 */
-	app.get('/forms', require('./forms/index.js').index);
+	app.get('/forms', require('./forms/basic.js').index);
 	app.get('/forms/basic', require('./forms/basic.js').index);
+
 	app.get('/forms/styles/horizontal', require('./forms/styles.js').horizontal);
 	app.get('/forms/styles/vertical', require('./forms/styles.js').vertical);
 	app.get('/forms/styles/inline', require('./forms/styles.js').inline);
