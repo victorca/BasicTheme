@@ -17,6 +17,7 @@ module.exports = function (app) {
 	app.get('/basic/navigation/collapsible', require('./basic/navigation.js').collapsible);
 
 	app.get('/basic/grid/content', require('./basic/grid.js').content);
+	app.get('/basic/grid/form', require('./basic/grid.js').form);
 
 	/*
 	 Forms.
