@@ -18,6 +18,11 @@
 .border-radius-none {
 	border-radius: 0 !important;
 }
+.border-bottom-dotted {
+	border-bottom: 1px dotted #bbb;
+}.border-bottom-double {
+	border-bottom: 3px double #bbb;
+}
 
 /* =Margin.
  -------------------------------------------------------------- */
