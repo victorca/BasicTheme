@@ -114,19 +114,81 @@
 	border-bottom : 1px dotted #dddddd;
 }
 
+/* =Typography.
+ -------------------------------------------------------------- */
 /* =Headings.
  -------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+	font-weight    : normal;
+	line-height    : 1.2;
+	margin-top     : 1em;
+	margin-bottom  : 0.8em;
+	padding-bottom : 0.3em;
+}
+
+h1 {
+	font-size : 2em;
+}
+
 h2 {
-	font-size   : 1.4em !important;
-	font-weight : normal !important;
-	line-height : 1.2 !important;
+	font-size : 1.4em;
 }
 
 h3 {
-	font-size   : 1.3em !important;
-	font-style  : italic;
-	line-height : 1.2 !important;
-	font-weight: normal;
+	font-size : 1.3em;
+}
+
+h4 {
+	font-size : 1.15em;
+}
+
+.box-content > h1,
+.box-content > h2,
+.box-content > h3,
+.box-content > h4,
+.box-content > h5,
+.box-content > h6 {
+	margin-top : 0;
+}
+
+/* =Text blocks.
+ -------------------------------------------------------------- */
+p:last-of-type {
+	margin-bottom : 0;
+}
+
+/* =Blockquotes.
+ -------------------------------------------------------------- */
+blockquote:last-of-type {
+	margin-bottom : 0 !important;
+}
+/* =Lists.
+ -------------------------------------------------------------- */
+.list-style-upper-alpha li{
+	list-style-type: upper-alpha;
+}
+.list-style-roman li{
+	list-style-type: upper-roman;
+}
+.list-style-icons {
+	margin-left: 0;
+}
+.list-style-icons li {
+	list-style-type: none;
+}
+.list-style-icons li i {
+	margin-right: 0.8em;
+	margin-top: 0.2em;
+}
+.list-style-check {
+	margin-left: 0;
+}
+.list-style-check li {
+	list-style-type: none;
+}
+.list-style-check li i {
+	margin-right: 0.8em;
+	margin-top: 0.2em;
 }
 
 /* =Links.
@@ -253,6 +315,10 @@ table caption + thead tr th {
 	padding                    : 0.6em;
 }
 
+.box .box-content .row-fluid:last-child .box {
+	margin-bottom : 0;
+}
+
 /* =Description.
  -------------------------------------------------------------- */
 .description {
@@ -273,7 +339,7 @@ body {
 }
 
 .description {
-	font-size   : 0.6em;
+	font-size   : 0.8em;
 	font-style  : italic !important;
 	font-weight : normal;
 }
@@ -680,4 +746,24 @@ form.form-vertical .row-fluid .form-controls {
 form.form-vertical .row-fluid .form-controls .help-inline {
 	margin-top     : 0.4em;
 	vertical-align : top;
+}
+/* =Icons.
+ -------------------------------------------------------------- */
+.icon-custom-positive {
+	background: url("../images/icons/check.png") transparent 0 0 no-repeat;
+	background-size: 100% auto;
+	display: inline-block;
+	height: 14px;
+	line-height: 14px;
+	vertical-align: text-top;
+	width: 14px;
+}
+.icon-custom-negative {
+	background: url("../images/icons/cross.png") transparent 0 0 no-repeat;
+	background-size: 100% auto;
+	display: inline-block;
+	height: 13px;
+	line-height: 14px;
+	vertical-align: text-top;
+	width: 13px;
 }

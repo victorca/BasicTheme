@@ -4,10 +4,431 @@ block sidebar
 	include ../layouts/sidebar
 
 block content
-		.content-header
-			.content-header-title
-				h2 Page Title
-				span.description Page description goes here.
+		h2.border-bottom-double Page Title
+			br
+			span.description Page description goes here.
 
 		.row-fluid
-			.span12
+			.span4.box
+				.box-header Headings
+				.box-content
+					h1
+						| H1 Tag Header
+						small  heading note
+						br
+						span.description Some description
+
+					h2
+						| H2 Tag Header
+						small  heading note
+						br
+						span.description Some description
+
+					h3
+						| H3 Tag Header
+						small  heading note
+						br
+						span.description Some description
+
+					h4
+						| H4 Tag Header
+						small  heading note
+						br
+						span.description Some description
+
+					h5
+						| H5 Tag Header
+						small  heading note
+						br
+						span.description Some description
+
+					h6
+						| H6 Tag Header
+						small  heading note
+						br
+						span.description Some description
+
+			.span4.box
+				.box-header Headings with dotted borders
+				.box-content
+					h1.border-bottom-dotted
+						| H1 Tag Header
+						small  heading note
+						br
+						span.description Some description
+
+					h2.border-bottom-dotted
+						| H2 Tag Header
+						small  heading note
+						br
+						span.description Some description
+
+					h3.border-bottom-dotted
+						| H3 Tag Header
+						small  heading note
+						br
+						span.description Some description
+
+					h4.border-bottom-dotted
+						| H4 Tag Header
+						small  heading note
+						br
+						span.description Some description
+
+					h5.border-bottom-dotted
+						| H5 Tag Header
+						small  heading note
+						br
+						span.description Some description
+
+					h6.border-bottom-dotted
+						| H6 Tag Header
+						small  heading note
+						br
+						span.description Some description
+
+			.span4.box
+				.box-header Headings with double borders
+				.box-content
+					h1.border-bottom-double
+						| H1 Tag Header
+						small  heading note
+						br
+						span.description Some description
+
+					h2.border-bottom-double
+						| H2 Tag Header
+						small  heading note
+						br
+						span.description Some description
+
+					h3.border-bottom-double
+						| H3 Tag Header
+						small  heading note
+						br
+						span.description Some description
+
+					h4.border-bottom-double
+						| H4 Tag Header
+						small  heading note
+						br
+						span.description Some description
+
+					h5.border-bottom-double
+						| H5 Tag Header
+						small  heading note
+						br
+						span.description Some description
+
+					h6.border-bottom-double
+						| H6 Tag Header
+						small  heading note
+						br
+						span.description Some description
+
+		.row-fluid
+			.span6
+				.box
+					.box-header Emphasis
+					.box-content
+						.row-fluid
+							.span12.box
+								.box-header De-emphasized
+								.box-content .
+									Always wisely <small>feel the outer</small> monkey.
+
+						.row-fluid
+							.span12.box
+								.box-header Emphasized
+								.box-content .
+									Always wisely <strong>feel the outer</strong> monkey.
+
+						.row-fluid
+							.span12.box
+								.box-header Italics
+								.box-content .
+									Always wisely <em>feel the outer</em> monkey.
+
+						.row-fluid
+							.span12.box
+								.box-header Emphasis classes
+								.box-content
+									p.mute Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
+									p.text-warning Etiam porta sem malesuada magna mollis euismod.
+									p.text-error Donec ullamcorper nulla non metus auctor fringilla.
+									p.text-info Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.
+									p.text-success Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+
+				.box
+					.box-header Alignment classes
+					.box-content
+						p.text-left Left aligned text.
+						p.text-center Center aligned text.
+						p.text-right Right aligned text.
+
+			.span6.box
+				.box-header Text Styles
+				.box-content
+					.row-fluid
+						.span12.box
+							.box-header Abbreviations
+							.box-content
+								p An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.
+
+								| <abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread.
+
+					.row-fluid
+						.span12.box
+							.box-header Addresses
+							.box-content
+								address
+									h4.border-bottom-dotted Twitter, Inc.
+									| 795 Folsom Ave, Suite 600
+									br
+									| San Francisco, CA 94107
+									br
+									abbr(title='Phone') P:
+									|  (123) 456-7890
+								address
+									h4.border-bottom-dotted Full Name
+									a(href='mailto:#') first.last@example.com
+
+					.row-fluid
+						.span12.box
+							.box-header Blockquotes
+							.box-content
+								blockquote
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+
+								blockquote
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+										small
+											| Someone famous
+											cite(title='Source Title') Source Title
+
+								blockquote.pull-right
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+										small
+											| Someone famous
+											cite(title='Source Title') Source Title
+
+								.clearfix
+
+		.row-fluid
+			.span12.box
+				.box-header Lists
+				.box-content
+					.row-fluid
+						.span4.box
+							.box-header Unordered
+							.box-content
+								ul
+									li Lorem ipsum dolor sit amet
+									li Consectetur adipiscing elit
+									li Integer molestie lorem at massa
+									li Facilisis in pretium nisl aliquet
+									li
+										| Nulla volutpat aliquam velit
+										ul
+											li Phasellus iaculis neque
+											li Purus sodales ultricies
+											li Vestibulum laoreet porttitor sem
+											li Ac tristique libero volutpat at
+									li Faucibus porta lacus fringilla vel
+									li Aenean sit amet erat nunc
+									li Eget porttitor lorem
+
+						.span4.box
+							.box-header Ordered
+							.box-content
+								ol
+									li Lorem ipsum dolor sit amet
+									li Consectetur adipiscing elit
+									li Integer molestie lorem at massa
+									li Facilisis in pretium nisl aliquet
+									li Nulla volutpat aliquam velit
+									li Faucibus porta lacus fringilla vel
+									li Aenean sit amet erat nunc
+									li Eget porttitor lorem
+
+						.span4.box
+							.box-header Unstyled
+							.box-content
+								ul.unstyled
+									li Lorem ipsum dolor sit amet
+									li Consectetur adipiscing elit
+									li Integer molestie lorem at massa
+									li Facilisis in pretium nisl aliquet
+									li
+										| Nulla volutpat aliquam velit
+										ul
+											li Phasellus iaculis neque
+											li Purus sodales ultricies
+											li Vestibulum laoreet porttitor sem
+											li Ac tristique libero volutpat at
+									li Faucibus porta lacus fringilla vel
+									li Aenean sit amet erat nunc
+									li Eget porttitor lorem
+
+					.row-fluid
+						.span4.box
+							.box-header Letter List
+							.box-content
+								ul.list-style-upper-alpha
+									li Lorem ipsum dolor sit amet
+									li Consectetur adipiscing elit
+									li Integer molestie lorem at massa
+									li Facilisis in pretium nisl aliquet
+									li
+										| Nulla volutpat aliquam velit
+										ul
+											li Phasellus iaculis neque
+											li Purus sodales ultricies
+											li Vestibulum laoreet porttitor sem
+											li Ac tristique libero volutpat at
+									li Faucibus porta lacus fringilla vel
+									li Aenean sit amet erat nunc
+									li Eget porttitor lorem
+									li Aenean sit amet erat nunc
+									li Lorem ipsum dolor sit amet
+
+						.span4.box
+							.box-header Roman List
+							.box-content
+								ul.list-style-roman
+									li Lorem ipsum dolor sit amet
+									li Consectetur adipiscing elit
+									li Integer molestie lorem at massa
+									li Facilisis in pretium nisl aliquet
+									li
+										| Nulla volutpat aliquam velit
+										ul
+											li Phasellus iaculis neque
+											li Purus sodales ultricies
+											li Vestibulum laoreet porttitor sem
+											li Ac tristique libero volutpat at
+									li Faucibus porta lacus fringilla vel
+									li Aenean sit amet erat nunc
+									li Eget porttitor lorem
+									li Aenean sit amet erat nunc
+									li Lorem ipsum dolor sit amet
+
+						.span4.box
+							.box-header Icon List
+							.box-content
+								ul.list-style-icons
+									li
+										i.icon-ok
+										| Lorem ipsum dolor sit amet
+									li
+										i.icon-fire
+										| Consectetur adipiscing elit
+									li
+										i.icon-bolt
+										| Integer molestie lorem at massa
+									li
+										i.icon-pencil
+										| Facilisis in pretium nisl aliquet
+									li
+										i.icon-book
+										| Nulla volutpat aliquam velit
+										ul.icons
+											li
+												i.icon-leaf
+												| Phasellus iaculis neque
+											li
+												i.icon-link
+												| Purus sodales ultricies
+											li
+												i.icon-lock
+												| Vestibulum laoreet porttitor sem
+											li
+												i.icon-random
+												| Ac tristique libero volutpat at
+									li
+										i.icon-pushpin
+										| Faucibus porta lacus fringilla vel
+									li
+										i.icon-plane
+										| Aenean sit amet erat nunc
+									li
+										i.icon-cogs
+										| Eget porttitor lorem
+
+					.row-fluid
+						.span4.box
+							.box-header Check list
+							.box-content
+								ul.list-style-check
+									li
+										i.icon-custom-positive
+										| Faucibus porta lacus fringilla vel
+									li
+										i.icon-custom-negative
+										| Vestibulum laoreet porttitor sem
+									li
+										i.icon-custom-positive
+										| Eget porttitor lorem
+
+						.span4.box
+							.box-header Inline
+							.box-content
+								ul.inline
+									li Lorem ipsum
+									li Phasellus iaculis
+									li Nulla volutpat
+
+					.row-fluid
+						.span4.box
+							.box-header Description
+							.box-content
+								dl
+									dt Description lists
+									dd A description list is perfect for defining terms.
+									dt Euismod
+									dd Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+									dd Donec id elit non mi porta gravida at eget metus.
+									dt Malesuada porta
+									dd Etiam porta sem malesuada magna mollis euismod.
+
+						.span8.box
+							.box-header Horizontal description
+							.box-content
+								dl.dl-horizontal
+									dt Description lists
+									dd A description list is perfect for defining terms.
+									dt Euismod
+									dd Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+									dd Donec id elit non mi porta gravida at eget metus.
+									dt Malesuada porta
+									dd Etiam porta sem malesuada magna mollis euismod.
+									dt Felis euismod semper eget lacinia
+									dd
+										| Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+
+		.row-fluid
+			.span12.box
+				.box-header Code
+				.box-content
+					.row-fluid
+						.span6.box
+							.box-header Inline
+							.box-content For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+
+						.span6.box
+							.box-header Basic block (pre)
+							.box-content
+								pre &lt;p&gt;Sample text here...&lt;/p&gt;
+
+		.row-fluid
+			.span12.box
+				.box-header Well blocks
+				.box-content
+					.well
+						| Look, I'm in a well!
+
+					.well.well-large
+						| Look, I'm in a well!
