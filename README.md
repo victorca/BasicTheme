@@ -73,3 +73,7 @@ To organize
 * Maps
 	+ Google Maps
 	+ Vector Maps
+
+* Layouts
+	+ 2 columns
+	+ 3 columns
