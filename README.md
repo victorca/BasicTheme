@@ -7,10 +7,6 @@ Advanced Elements
 Forms
 ============================
 
-* Global Styles
-	+ 	Vertical Aligned
-	+ 	Horizontal Aligned
-
 * Basic Elements
 	+ 	Input Fields
 	+ 	Textarea
