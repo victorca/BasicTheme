@@ -71,5 +71,6 @@ To organize
 	+ Vector Maps
 
 * Layouts
+	+ 1 column
 	+ 2 columns
 	+ 3 columns
