@@ -236,10 +236,10 @@ table caption + thead tr th {
 /* =Content.
  -------------------------------------------------------------- */
 .content {
-	border-left : 4px double #dddddd;
+	background-color: rgb(255, 252, 229);
 	margin      : 0 !important;
 	padding     : 0 2.6em 0 2.6em !important;
-	width       : 85% !important;
+	width       : 85.1% !important;
 }
 
 /* =Content. Header.
@@ -340,7 +340,7 @@ table caption + thead tr th {
 /* =TODO: To organize.
  -------------------------------------------------------------- */
 body {
-	background: url("../images/backgrounds/a.png") repeat scroll 0 0 #f4f4f4;
+	background-color: rgba(190, 236, 250, 0.29);
 	font-family : Ubuntu, "Trebuchet MS", sans-serif !important;
 	padding-top : 40px;
 }
@@ -825,40 +825,40 @@ form .row-fluid.warning select:focus {
 
 form .row-fluid.error label,
 form .row-fluid.error .description {
-	color : #B94A48 !important;
+	color : #b94a48 !important;
 }
 
 form .row-fluid.error input,
 form .row-fluid.error textarea,
 form .row-fluid.error select {
-	border-color: #B94A48;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	border-color : #b94a48;
+	box-shadow   : 0 1px 1px rgba(0, 0, 0, 0.075) inset;
 }
 
 form .row-fluid.error input:focus,
 form .row-fluid.error textarea:focus,
 form .row-fluid.error select:focus {
-	border-color: #953B39;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px #D59392;
+	border-color : #953b39;
+	box-shadow   : 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px #d59392;
 }
 
 form .row-fluid.info label,
 form .row-fluid.info .description {
-	color : #3A87AD !important;
+	color : #3a87ad !important;
 }
 
 form .row-fluid.info input,
 form .row-fluid.info textarea,
 form .row-fluid.info select {
-	border-color: #3A87AD;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	border-color : #3a87ad;
+	box-shadow   : 0 1px 1px rgba(0, 0, 0, 0.075) inset;
 }
 
 form .row-fluid.info input:focus,
 form .row-fluid.info textarea:focus,
 form .row-fluid.info select:focus {
-	border-color: #2D6987;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px #7AB5D3;
+	border-color : #2d6987;
+	box-shadow   : 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px #7ab5d3;
 }
 
 form .row-fluid.success label,
@@ -869,13 +869,24 @@ form .row-fluid.success .description {
 form .row-fluid.success input,
 form .row-fluid.success textarea,
 form .row-fluid.success select {
-	border-color: #468847;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	border-color : #468847;
+	box-shadow   : 0 1px 1px rgba(0, 0, 0, 0.075) inset;
 }
 
 form .row-fluid.success input:focus,
 form .row-fluid.success textarea:focus,
 form .row-fluid.success select:focus {
-	border-color: #356635;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px #7ABA7B;
+	border-color : #356635;
+	box-shadow   : 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px #7aba7b;
 }
+
+form .radio, form .checkbox {
+	padding-left : 0;
+}
+
+form  input[type="radio"], form input[type="checkbox"] {
+	margin-left : 0 !important;
+	margin-right: 0.5em;
+	margin-top: 0.23em;
+}
+/*TODO: fix the on hover background position issue with uniform radios */
