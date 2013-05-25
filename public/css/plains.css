@@ -162,33 +162,41 @@ p:last-of-type {
 blockquote:last-of-type {
 	margin-bottom : 0 !important;
 }
+
 /* =Lists.
  -------------------------------------------------------------- */
-.list-style-upper-alpha li{
-	list-style-type: upper-alpha;
+.list-style-upper-alpha li {
+	list-style-type : upper-alpha;
 }
-.list-style-roman li{
-	list-style-type: upper-roman;
+
+.list-style-roman li {
+	list-style-type : upper-roman;
 }
+
 .list-style-icons {
-	margin-left: 0;
+	margin-left : 0;
 }
+
 .list-style-icons li {
-	list-style-type: none;
+	list-style-type : none;
 }
+
 .list-style-icons li i {
-	margin-right: 0.8em;
-	margin-top: 0.2em;
+	margin-right : 0.8em;
+	margin-top   : 0.2em;
 }
+
 .list-style-check {
-	margin-left: 0;
+	margin-left : 0;
 }
+
 .list-style-check li {
-	list-style-type: none;
+	list-style-type : none;
 }
+
 .list-style-check li i {
-	margin-right: 0.8em;
-	margin-top: 0.2em;
+	margin-right : 0.8em;
+	margin-top   : 0.2em;
 }
 
 /* =Links.
@@ -196,8 +204,9 @@ blockquote:last-of-type {
 /* =Tables.
  -------------------------------------------------------------- */
 table:last-of-type {
-	margin-bottom: 0;
+	margin-bottom : 0;
 }
+
 table caption {
 	background-image        : linear-gradient(to bottom, #ffffff, #f2f2f2);
 	border                  : 1px solid #dddddd;
@@ -227,11 +236,11 @@ table caption + thead tr th {
 /* =Content.
  -------------------------------------------------------------- */
 .content {
-	background-color : #f4f4f4;
-	border-left      : 4px double #dddddd;
-	margin           : 0 !important;
-	padding          : 0 2.6em 0 2.6em !important;
-	width            : 85% !important;
+	/* TODO: background: url("../images/backgrounds/a.png") repeat scroll 0 0 #f4f4f4;*/
+	border-left : 4px double #dddddd;
+	margin      : 0 !important;
+	padding     : 0 2.6em 0 2.6em !important;
+	width       : 85% !important;
 }
 
 /* =Content. Header.
@@ -750,23 +759,123 @@ form.form-vertical .row-fluid .form-controls .help-inline {
 	margin-top     : 0.4em;
 	vertical-align : top;
 }
+
 /* =Icons.
  -------------------------------------------------------------- */
 .icon-custom-positive {
-	background: url("../images/icons/check.png") transparent 0 0 no-repeat;
-	background-size: 100% auto;
-	display: inline-block;
-	height: 14px;
-	line-height: 14px;
-	vertical-align: text-top;
-	width: 14px;
+	background      : url("../images/icons/check.png") transparent 0 0 no-repeat;
+	background-size : 100% auto;
+	display         : inline-block;
+	height          : 14px;
+	line-height     : 14px;
+	vertical-align  : text-top;
+	width           : 14px;
 }
+
 .icon-custom-negative {
-	background: url("../images/icons/cross.png") transparent 0 0 no-repeat;
-	background-size: 100% auto;
-	display: inline-block;
-	height: 13px;
-	line-height: 14px;
-	vertical-align: text-top;
-	width: 13px;
+	background      : url("../images/icons/cross.png") transparent 0 0 no-repeat;
+	background-size : 100% auto;
+	display         : inline-block;
+	height          : 13px;
+	line-height     : 14px;
+	vertical-align  : text-top;
+	width           : 13px;
+}
+
+/* =Forms.
+ -------------------------------------------------------------- */
+form .form-actions {
+	border-top       : 1px solid #dc9a00 !important;
+	background-color : #f7f0b1;
+	border-top       : 0 none;
+	margin-top       : 0;
+	padding          : 0 !important;
+}
+
+form .form-actions:hover {
+	background-color : #f7ee9d;
+}
+
+/* =Forms. Icons.
+ -------------------------------------------------------------- */
+form .form-control-label label i {
+	margin-right : 0.7em;
+}
+
+/* =Forms. Input styling.
+ -------------------------------------------------------------- */
+form .row-fluid.warning label,
+form .row-fluid.warning .description {
+	color : #c09853 !important;
+}
+
+form .row-fluid.warning input,
+form .row-fluid.warning textarea,
+form .row-fluid.warning select {
+	border-color : #c09853;
+	box-shadow   : 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+form .row-fluid.warning input:focus,
+form .row-fluid.warning textarea:focus,
+form .row-fluid.warning select:focus {
+	border-color : #a47e3c;
+	box-shadow   : 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px #dbc59e;
+}
+
+form .row-fluid.error label,
+form .row-fluid.error .description {
+	color : #B94A48 !important;
+}
+
+form .row-fluid.error input,
+form .row-fluid.error textarea,
+form .row-fluid.error select {
+	border-color: #B94A48;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+form .row-fluid.error input:focus,
+form .row-fluid.error textarea:focus,
+form .row-fluid.error select:focus {
+	border-color: #953B39;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px #D59392;
+}
+
+form .row-fluid.info label,
+form .row-fluid.info .description {
+	color : #3A87AD !important;
+}
+
+form .row-fluid.info input,
+form .row-fluid.info textarea,
+form .row-fluid.info select {
+	border-color: #3A87AD;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+form .row-fluid.info input:focus,
+form .row-fluid.info textarea:focus,
+form .row-fluid.info select:focus {
+	border-color: #2D6987;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px #7AB5D3;
+}
+
+form .row-fluid.success label,
+form .row-fluid.success .description {
+	color : #468847 !important;
+}
+
+form .row-fluid.success input,
+form .row-fluid.success textarea,
+form .row-fluid.success select {
+	border-color: #468847;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+form .row-fluid.success input:focus,
+form .row-fluid.success textarea:focus,
+form .row-fluid.success select:focus {
+	border-color: #356635;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px #7ABA7B;
 }
