@@ -236,7 +236,6 @@ table caption + thead tr th {
 /* =Content.
  -------------------------------------------------------------- */
 .content {
-	/* TODO: background: url("../images/backgrounds/a.png") repeat scroll 0 0 #f4f4f4;*/
 	border-left : 4px double #dddddd;
 	margin      : 0 !important;
 	padding     : 0 2.6em 0 2.6em !important;
@@ -341,6 +340,7 @@ table caption + thead tr th {
 /* =TODO: To organize.
  -------------------------------------------------------------- */
 body {
+	background: url("../images/backgrounds/a.png") repeat scroll 0 0 #f4f4f4;
 	font-family : Ubuntu, "Trebuchet MS", sans-serif !important;
 	padding-top : 40px;
 }
