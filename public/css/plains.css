@@ -42,11 +42,7 @@
 /* =Structure. Sidebar.
  -------------------------------------------------------------- */
 .sidebar {
-	padding : 0.5em;
-}
-
-.sidebar-inner {
-	padding : 0.5em;
+	padding : 0.5em 0.5em 0.5em 1em;
 }
 
 .sidebar .nav {
