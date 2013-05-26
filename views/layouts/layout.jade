@@ -24,13 +24,14 @@ html
 		include ./navbar
 
 		.container-fluid.padding-none
-			.row-fluid
+			//.row-fluid
 				.span12
 					include ./breadcrumbs
 
 			.row-fluid
 				.span2.sidebar
-					block sidebar
+					.sidebar-inner
+						block sidebar
 
 				.span10.content
 					block content
