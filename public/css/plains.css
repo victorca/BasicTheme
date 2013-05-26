@@ -36,9 +36,6 @@
 
 /* =Structure. Sidebar.
  -------------------------------------------------------------- */
-.sidebar {
-}
-
 .sidebar li > a {
 	border-right  : 0 !important;
 	padding-left  : 14px !important;
@@ -236,10 +233,11 @@ table caption + thead tr th {
 /* =Content.
  -------------------------------------------------------------- */
 .content {
-	background-color: rgb(255, 252, 229);
-	margin      : 0 !important;
-	padding     : 0 2.6em 0 2.6em !important;
-	width       : 85.1% !important;
+	background-color: #fff3d7;
+	margin     : 0 !important;
+	min-height : 750px !important;
+	padding    : 0 2.6em 0 2.6em !important;
+	width      : 85.1% !important;
 }
 
 /* =Content. Header.
@@ -340,9 +338,10 @@ table caption + thead tr th {
 /* =TODO: To organize.
  -------------------------------------------------------------- */
 body {
-	background-color: rgba(190, 236, 250, 0.29);
-	font-family : Ubuntu, "Trebuchet MS", sans-serif !important;
-	padding-top : 40px;
+	background-color : #d0eeff;
+	font-family      : Ubuntu, "Trebuchet MS", sans-serif !important;
+	min-height       : 100% !important;
+	padding-top      : 40px;
 }
 
 .nav > li a:hover, .nav > li a:focus {
@@ -885,8 +884,9 @@ form .radio, form .checkbox {
 }
 
 form  input[type="radio"], form input[type="checkbox"] {
-	margin-left : 0 !important;
-	margin-right: 0.5em;
-	margin-top: 0.23em;
+	margin-left  : 0 !important;
+	margin-right : 0.5em;
+	margin-top   : 0.23em;
 }
+
 /*TODO: fix the on hover background position issue with uniform radios */
