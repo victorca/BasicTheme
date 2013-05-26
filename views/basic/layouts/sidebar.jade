@@ -62,16 +62,16 @@ ul.nav.nav-tabs.nav-stacked
 						i.icon-align-justify
 						| Growl Notifications
 
-	li(class=(page == 'basic/tables/data' ?'active':''))
+	li(class=(page == 'basic/tables/simple' || page == 'basic/tables/data' ?'active':''))
 		.accordion-group.border-radius-none.margin-bottom-none
 			.accordion-heading
 				a.accordion-toggle(data-toggle="collapse",href="#tables")
-					i.icon-table(class=(page == 'basic/tables/data' ?'icon-white':''))
+					i.icon-table(class=(page == 'basic/tables/simple' || page == 'basic/tables/data' ?'icon-white':''))
 					| Tables
-					i.accordion-level.icon-chevron-right.pull-right(class=(page == 'basic/tables/data' ?'icon-white':''))
+					i.accordion-level.icon-chevron-right.pull-right(class=(page == 'basic/tables/simple' || page == 'basic/tables/data' ?'icon-white':''))
 
-			#tables.accordion-body.collapse(class=(page == 'basic/tables/data' ?'in':''))
-				a.border-radius-none(href="/basic/tables/simple")
+			#tables.accordion-body.collapse(class=(page == 'basic/tables/simple' || page == 'basic/tables/data' ?'in':''))
+				a.border-radius-none(href="/basic/tables/simple",class=(page == 'basic/tables/simple' ?'active':''))
 					.accordion-inner
 						i.icon-th
 						| Simple Tables
@@ -86,31 +86,31 @@ ul.nav.nav-tabs.nav-stacked
 						i.icon-th-list
 						| Media Tables
 
-	li(class=(page == 'basic/navigation/tabs' ?'active':''))
+	li(class=(page == 'basic/navigation/breadcrumbs' || page == 'basic/navigation/tabs'|| page == 'basic/navigation/pills'|| page == 'basic/navigation/collapsible' ?'active':''))
 		.accordion-group.border-radius-none.margin-bottom-none
 			.accordion-heading
 				a.accordion-toggle(data-toggle="collapse",href="#navigation")
-					i.icon-th(class=(page == 'basic/navigation/tabs' ?'icon-white':''))
+					i.icon-th(class=(page == 'basic/navigation/breadcrumbs' || page == 'basic/navigation/tabs' ?'icon-white':''))
 					| Navigation
-					i.accordion-level.icon-chevron-right.pull-right(class=(page == 'basic/navigation/tabs' ?'icon-white':''))
+					i.accordion-level.icon-chevron-right.pull-right(class=(page == 'basic/navigation/breadcrumbs' || page == 'basic/navigation/tabs' ?'icon-white':''))
 
-			#navigation.accordion-body.collapse
-				a.border-radius-none(href="/basic/navigation/breadcrumbs")
+			#navigation.accordion-body.collapse(class=(page == 'basic/navigation/breadcrumbs' || page == 'basic/navigation/tabs' || page == 'basic/navigation/pills' || page == 'basic/navigation/collapsible' ?'in':''))
+				a.border-radius-none(href="/basic/navigation/breadcrumbs",class=(page == 'basic/navigation/breadcrumbs' ?'active':''))
 					.accordion-inner
 						i.icon-bookmark
 						| Breadcrumbs
 
-				a.border-radius-none(href="/basic/navigation/tabs")
+				a.border-radius-none(href="/basic/navigation/tabs",class=(page == 'basic/navigation/tabs' ?'active':''))
 					.accordion-inner
 						i.icon-th-list
 						| Tabs
 
-				a.border-radius-none(href="/basic/navigation/pills")
+				a.border-radius-none(href="/basic/navigation/pills",class=(page == 'basic/navigation/pills' ?'active':''))
 					.accordion-inner
 						i.icon-th-list
 						| Pills
 
-				a.border-radius-none(href="/basic/navigation/collapsible")
+				a.border-radius-none(href="/basic/navigation/collapsible",class=(page == 'basic/navigation/collapsible' ?'active':''))
 					.accordion-inner
 						i.icon-align-justify
 						| Collapsibles
@@ -120,21 +120,21 @@ ul.nav.nav-tabs.nav-stacked
 						i.icon-th-list
 						| Pagination
 
-	li
+	li(class=(page == 'basic/grid/content' || page == 'basic/grid/form' ?'active':''))
 		.accordion-group.border-radius-none.margin-bottom-none
 			.accordion-heading
 				a.accordion-toggle(data-toggle="collapse",href="#grid")
-					i.icon-th
+					i.icon-th(class=(page == 'basic/grid/content' || page == 'basic/grid/form' ?'icon-white':''))
 					| Grid
-					i.accordion-level.icon-chevron-right.pull-right
+					i.accordion-level.icon-chevron-right.pull-right(class=(page == 'basic/grid/content' || page == 'basic/grid/form' ?'icon-white':''))
 
-			#grid.accordion-body.collapse
-				a.border-radius-none(href="/basic/grid/content")
+			#grid.accordion-body.collapse(class=(page == 'basic/grid/content' || page == 'basic/grid/form' ?'in':''))
+				a.border-radius-none(href="/basic/grid/content",class=(page == 'basic/grid/content' ?'active':''))
 					.accordion-inner
 						i.icon-th-large
 						| Content Grid
 
-				a.border-radius-none(href="/basic/grid/form")
+				a.border-radius-none(href="/basic/grid/form",class=(page == 'basic/grid/form' ?'active':''))
 					.accordion-inner
 						i.icon-th-list
 						| Form Grid
