@@ -6,7 +6,7 @@
 /* =Structure. Navbar.
  -------------------------------------------------------------- */
 .navbar-inner {
-	background-color : #0088cc !important;
+	/*background-image : linear-gradient(to bottom, #5b9aed, #1d68c0);*/
 	color            : #ffffff;
 }
 
@@ -42,14 +42,16 @@
 /* =Structure. Sidebar.
  -------------------------------------------------------------- */
 .sidebar {
-	padding : 0.5em 0.5em 0.5em 1em;
+	padding : 1.2em 0 0.5em 1em;
 }
 
 .sidebar .nav {
 	/*box-shadow    : 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.31);*/
 	margin-bottom : 0;
 }
-
+.sidebar .nav li {
+	/*margin-bottom: 0.3em;*/
+}
 .sidebar .nav li:last-child {
 	margin-bottom : 0;
 }
@@ -61,6 +63,10 @@
 	text-shadow      : 0 1px 0 #ffffff;
 }
 
+.sidebar .nav li > a:hover {
+	border-color     : #bcbcbc;
+	background-image : linear-gradient(to bottom, #f8f8f8, #d3d7db);
+}
 
 .sidebar .nav li .accordion-group {
 	border : 0;
@@ -73,11 +79,28 @@
 	text-shadow      : 0 1px 0 #ffffff;
 }
 
-.sidebar .nav li.active .accordion-toggle {
+.sidebar .nav li .accordion-toggle:hover {
+	background-image : linear-gradient(to bottom, #f4f4f4, #cbcfd3);
+}
+
+.sidebar .nav li .accordion-toggle.accordion-unfolded {
+	background-image : linear-gradient(to bottom, #f4f4f4, #c9cdd1);
+}
+
+.sidebar .nav li .accordion-toggle.accordion-unfolded:hover {
+	background-image : linear-gradient(to bottom, #f1f1f1, #c0c4c8);
+}
+
+.sidebar .nav li.active > a, .sidebar .nav li.active .accordion-toggle {
 	background-image : linear-gradient(to bottom, #5b9aed, #1d68c0);
 	border           : 1px solid #2e69ae;
 	color            : #fefefe;
 	text-shadow      : 0 1px 0 #193c65;
+}
+
+.sidebar .nav li.active .accordion-toggle:hover {
+	background-image : linear-gradient(to bottom, #5b9aed, #316096);
+	border-color     : #214a7b;
 }
 
 .sidebar .nav li .accordion-body {
@@ -94,7 +117,7 @@
 	color         : #404040;
 	text-shadow   : 0 1px 0 #ffffff;
 
-	padding-left: 2em;
+	padding-left  : 2em;
 }
 
 .sidebar .nav li .accordion-body a:last-of-type .accordion-inner {
@@ -328,6 +351,8 @@ table caption + thead tr th {
 .box .box-header {
 	background-image        : linear-gradient(to bottom, #ffffff, #cccccc);
 	border                  : 1px solid #aaaaaa;
+	/*color: #FEFEFE;*/
+	/*text-shadow: 0 1px 0 #193C65;*/
 	border-top-left-radius  : 4px;
 	border-top-right-radius : 4px;
 	padding                 : 0.6em;
