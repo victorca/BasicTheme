@@ -22,5 +22,11 @@ module.exports = {
 			title: 'Express',
 			page : 'basic/navigation/collapsible'
 		});
+	},
+	pagination : function (req, res) {
+		res.render('basic/navigation/pagination', {
+			title: 'Express',
+			page : 'basic/navigation/pagination'
+		});
 	}
 };
