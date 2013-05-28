@@ -5,6 +5,9 @@
 	border-top-right-radius : 3px;
 	border-top-left-radius  : 3px;
 }
+.accordion .accordion-inner {
+	background-color: white;
+}
 
 /* =Accordions. Icons.
  -------------------------------------------------------------- */
