@@ -1,0 +1,25 @@
+extends ../../layouts/layout
+
+block sidebar
+	include ../layouts/sidebar
+
+block content
+	.content-header
+		.content-header-title
+			h2 Breadcrumbs Examples
+			span.description A single example shown as it might be displayed across multiple pages.
+
+	.row-fluid
+		.span12.box.cf-tabs.cf-tabs-c
+			.box-header
+				ul.nav.nav-tabs
+					li.active
+						a(href='#box-tabs-style-a-1',data-toggle='tab') Font Awesome
+					li
+						a(href='#box-tabs-style-a-2',data-toggle='tab') Icomoon
+					li
+						a(href='#box-tabs-style-a-2',data-toggle='tab') Fugue
+
+			.box-content
+				.tab-content
+					.tab-pane.active#box-tabs-style-a-0.

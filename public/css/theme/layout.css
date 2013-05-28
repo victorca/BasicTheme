@@ -1,0 +1,198 @@
+body {
+	background  : url("../../images/backgrounds/d.png") repeat scroll 0 0 transparent;
+	font-family : Ubuntu, "Trebuchet MS", sans-serif !important;
+	min-height  : 100% !important;
+	padding-top : 40px;
+}
+
+/* =Structure.
+ -------------------------------------------------------------- */
+/* =Structure. Navbar.
+ -------------------------------------------------------------- */
+.navbar-inner {
+	/*background-image : linear-gradient(to bottom, #5b9aed, #1d68c0);*/
+	color : #ffffff;
+}
+
+.navbar .brand {
+	padding : 5px 15px !important;
+}
+
+/* =Structure. Navbar. Buttons.
+ -------------------------------------------------------------- */
+.navbar .user-bar.pull-right {
+	padding-right : 2em;
+}
+
+.navbar .user-bar.pull-right > li {
+	margin-right : 0.5em;
+}
+
+.navbar .user-bar.pull-right li:last-child {
+	margin-right : 0;
+}
+
+/* =Structure. Breadcrumb.
+ -------------------------------------------------------------- */
+.breadcrumb {
+	background-image : linear-gradient(to bottom, #ffffff, #f2f2f2);
+	border           : 1px solid #dddddd;
+}
+
+.breadcrumb-container {
+	width : 85% !important;
+}
+
+/* =Structure. Sidebar.
+ -------------------------------------------------------------- */
+.sidebar {
+	padding : 1.2em 0 0.5em 1em;
+}
+
+.sidebar .nav {
+	/*box-shadow    : 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.31);*/
+	margin-bottom : 0;
+}
+
+.sidebar .nav li {
+	/*margin-bottom: 0.3em;*/
+}
+
+.sidebar .nav li:last-child {
+	margin-bottom : 0;
+}
+
+.sidebar .nav li > a {
+	background-image : linear-gradient(to bottom, #ffffff, #e7ebef);
+	border           : 1px solid #bcbcbc;
+	color            : #404040;
+	text-shadow      : 0 1px 0 #ffffff;
+}
+
+.sidebar .nav li > a:hover {
+	border-color     : #bcbcbc;
+	background-image : linear-gradient(to bottom, #f8f8f8, #d3d7db);
+}
+
+.sidebar .nav li .accordion-group {
+	border : 0;
+}
+
+.sidebar .nav li .accordion-toggle {
+	background-image : linear-gradient(to bottom, #ffffff, #e7ebef);
+	border           : 1px solid #bcbcbc;
+	color            : #404040;
+	text-shadow      : 0 1px 0 #ffffff;
+}
+
+.sidebar .nav li .accordion-toggle:hover {
+	background-image : linear-gradient(to bottom, #f4f4f4, #cbcfd3);
+}
+
+.sidebar .nav li .accordion-toggle.accordion-unfolded {
+	background-image : linear-gradient(to bottom, #f4f4f4, #c9cdd1);
+}
+
+.sidebar .nav li .accordion-toggle.accordion-unfolded:hover {
+	background-image : linear-gradient(to bottom, #f1f1f1, #c0c4c8);
+}
+
+.sidebar .nav li.active > a, .sidebar .nav li.active .accordion-toggle {
+	background-image : linear-gradient(to bottom, #5b9aed, #1d68c0);
+	border           : 1px solid #2e69ae;
+	color            : #fefefe;
+	text-shadow      : 0 1px 0 #193c65;
+}
+
+.sidebar .nav li.active .accordion-toggle:hover {
+	background-image : linear-gradient(to bottom, #5b9aed, #316096);
+	border-color     : #214a7b;
+}
+
+.sidebar .nav li .accordion-body {
+	background-color : #eff3f6;
+}
+
+.sidebar .nav li .accordion-body .accordion-inner {
+	border-top    : 1px solid transparent;
+	border-bottom : 1px solid transparent;
+
+	border-left   : 1px solid #b9c0cc;
+	border-right  : 1px solid #b9c0cc;
+
+	color         : #404040;
+	text-shadow   : 0 1px 0 #ffffff;
+
+	padding-left  : 2em;
+}
+
+.sidebar .nav li .accordion-body a:last-of-type .accordion-inner {
+	border-bottom : 1px solid #b9c0cc;
+}
+
+.sidebar .nav li .accordion-body .accordion-inner:hover {
+	background-color : #d4e2f0 !important;
+	border-bottom    : 1px solid #b9c0cc;
+	border-top       : 1px solid #b9c0cc;
+}
+
+.sidebar .nav li .accordion-body .active .accordion-inner {
+	background-color   : #e1ebf6;
+	border-right-width : 4px;
+	border-bottom      : 1px solid #b9c0cc;
+	border-top         : 1px solid #b9c0cc;
+}
+
+.sidebar .nav li a i {
+	margin-right : 0.5em !important;
+}
+
+.sidebar .nav li a i.accordion-level {
+	margin-right : -5px !important;
+}
+
+/* =Structure. Separators.
+ -------------------------------------------------------------- */
+.separator.dashed {
+	border-bottom : 1px dashed #dddddd;
+}
+
+.separator.dotted {
+	border-bottom : 1px dotted #dddddd;
+}
+
+/* =Content.
+ -------------------------------------------------------------- */
+.content {
+	/*background-color: #fff3d7;*/
+	margin     : 0 !important;
+	min-height : 750px !important;
+	padding    : 0 2.6em 0 2.6em !important;
+	width      : 85.1% !important;
+}
+
+/* =Content. Header.
+ -------------------------------------------------------------- */
+.content-header {
+	border-bottom  : 3px double #cccccc;
+	margin-bottom  : 2.5em;
+	margin-top     : 2em;
+	padding-bottom : 0.7em;
+}
+
+.content-header:first-of-type {
+	margin-top : 0.5em;
+}
+
+.content-header-title {
+	display : inline-block;
+}
+
+.content-header .description {
+	font-size : 1em;
+}
+
+.nav > li a:hover, .nav > li a:focus {
+	text-decoration  : none;
+	background-color : rgb(238, 238, 238);
+}

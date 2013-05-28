@@ -1,0 +1,264 @@
+/* =Tabs.
+ -------------------------------------------------------------- */
+.cf-tabs {
+	margin-bottom : 2em;
+}
+
+.cf-tabs ul {
+	margin-bottom : 16px;
+	padding-left  : 0.6em;
+}
+
+.cf-tabs ul > li {
+	margin-right : 0.3em;
+}
+
+.cf-tabs ul > li > a {
+	padding-bottom : 6px;
+	padding-top    : 6px;
+}
+
+.cf-tabs ul > li.active > a {
+	color : #d54e21 !important;
+}
+
+/* =Tabs. Default.
+ -------------------------------------------------------------- */
+.cf-tabs.cf-tabs-default > .tab-content {
+	padding-left : 0.8em;
+}
+
+/* =Tabs. Default B.
+ -------------------------------------------------------------- */
+.cf-tabs-default-b ul {
+	border-bottom-color : #aaaaaa;
+}
+
+.cf-tabs-default-b ul > li a {
+	border        : 1px solid #d3d3d3;
+	border-bottom : none;
+}
+
+.cf-tabs-default-b ul > li.active a,
+.cf-tabs-default-b ul > li.active a:hover {
+	border              : 1px solid #aaaaaa;
+	border-bottom-color : white;
+}
+
+/* =Tabs. A.
+ -------------------------------------------------------------- */
+.cf-tabs.cf-tabs-a .box-header,
+.cf-tabs.cf-tabs-b .box-header,
+.cf-tabs.cf-tabs-c .box-header,
+.cf-tabs.cf-tabs-d .box-header {
+	padding : 0.4em 0.3em 0 0.3em;
+}
+
+.cf-tabs.cf-tabs-a ul,
+.cf-tabs.cf-tabs-b ul,
+.cf-tabs.cf-tabs-c ul,
+.cf-tabs.cf-tabs-d ul {
+	border-bottom : 0;
+	margin-bottom : 0;
+	padding-left  : 0;
+}
+
+/* =Tabs. B.
+ -------------------------------------------------------------- */
+.cf-tabs.cf-tabs-b ul > li,
+.cf-tabs.cf-tabs-c ul > li {
+	margin-right : 0;
+}
+
+.cf-tabs.cf-tabs-b ul > li:first-child a,
+.cf-tabs.cf-tabs-c ul > li:first-child a {
+	border-right            : none;
+	border-top-right-radius : 0;
+}
+
+.cf-tabs.cf-tabs-b ul > li:last-child a,
+.cf-tabs.cf-tabs-c ul > li:last-child a {
+	border-top-left-radius : 0;
+}
+
+.cf-tabs.cf-tabs-b ul > li a,
+.cf-tabs.cf-tabs-c ul > li a {
+	border-left  : 1px solid #dddddd;
+	border-right : 1px solid #dddddd;
+	border-top   : 1px solid #dddddd;
+	margin-right : 0;
+}
+
+/* =Tabs. C.
+ -------------------------------------------------------------- */
+.cf-tabs.cf-tabs-c .box-header {
+	padding : 0;
+}
+
+.cf-tabs.cf-tabs-c ul > li a {
+	border-top     : 0;
+	border-radius  : 0;
+	padding-top    : 10px;
+	padding-bottom : 8px;
+}
+
+.cf-tabs.cf-tabs-c ul > li a:hover,
+.cf-tabs.cf-tabs-c ul > li a:focus {
+	border-top : 0;
+}
+
+.cf-tabs.cf-tabs-c ul > li:first-child a {
+	border-right : none;
+	border-left  : none;
+}
+
+/* =Tabs. D.
+ -------------------------------------------------------------- */
+.cf-tabs.cf-tabs-d .box-header {
+	padding : 0.3em;
+}
+
+.cf-tabs.cf-tabs-d ul > li {
+	margin-right : 0;
+}
+
+.cf-tabs.cf-tabs-d ul > li a {
+	border       : 1px solid #dddddd;
+	margin-right : 0;
+	padding      : 0.3em 0.6em;
+}
+
+.cf-tabs.cf-tabs-d ul > li a:hover {
+	border-bottom-color : #dddddd;
+}
+
+.cf-tabs.cf-tabs-d ul > li:first-child a {
+	border-top-right-radius   : 0;
+	border-bottom-left-radius : 4px;
+	border-bottom-color       : #dddddd;
+}
+
+.cf-tabs.cf-tabs-d ul > li:last-child a {
+	border-top-left-radius     : 0;
+	border-bottom-right-radius : 4px;
+	border-left                : 0;
+}
+
+/* =Tabs. F.
+ -------------------------------------------------------------- */
+.cf-tabs.cf-tabs-f > ul {
+	border-bottom : 3px double #cccccc;
+	text-align    : center;
+}
+
+.cf-tabs.cf-tabs-f > ul > li {
+	display       : inline-block;
+	float         : none;
+	margin-bottom : -0.2em;
+	margin-right  : 0;
+	position      : relative;
+}
+
+.cf-tabs.cf-tabs-f > ul > li a {
+	background-color : transparent !important;
+	border           : none !important;
+	margin-right     : 0;
+}
+
+.cf-tabs.cf-tabs-f > ul > li.active {
+	border-bottom : 3px solid #d54e21;
+}
+
+.cf-tabs.cf-tabs-f > ul > li.active:before {
+	border-top   : 4px solid #d54e21;
+	border-left  : 4px solid transparent;
+	border-right : 4px solid transparent;
+	content      : "";
+	display      : block;
+	left         : 50%;
+	top          : 2.95em;
+	margin-left  : -4px;
+	margin-top   : -6px;
+	position     : absolute;
+}
+
+/* =Tabs. F. North Arrow.
+ -------------------------------------------------------------- */
+.cf-tabs.cf-tabs-f.cf-tabs-f-n-arrow > ul > li.active:before {
+	border-bottom : 4px solid #d54e21;
+	border-top    : none;
+	top           : 2.45em;
+}
+
+/* =Tabs. F. B.
+ -------------------------------------------------------------- */
+.cf-tabs.cf-tabs-fb > ul {
+	background-color : #f5f5f5;
+	border-top       : 3px double #cccccc;
+}
+
+/* =Tabs. F. Background in selected tab.
+ -------------------------------------------------------------- */
+.cf-tabs.cf-tabs-fb.cf-tabs-fb-libg > ul > li.active {
+	background-color : #efefef;
+}
+
+/* =TODO: Tabs. Quick lists.
+ -------------------------------------------------------------- */
+.cf-tabs.cf-tabs-fb.cf-tabs-quick-list {
+
+}
+
+/* =Tabs. Vertical Tabs.
+ -------------------------------------------------------------- */
+.cf-tabs.tabs-left > ul > li {
+	margin-right : 0;
+}
+
+.cf-tabs.tabs-left.tabs-left-b > ul {
+	border-right-color : #d3d3d3;
+	padding-right      : 0.7em;
+}
+
+.cf-tabs.tabs-left.tabs-left-b > ul > li {
+	border        : 1px solid transparent;
+	margin-right  : 0;
+	margin-bottom : 0.3em;
+}
+
+.cf-tabs.tabs-left.tabs-left-b > ul > li a {
+	padding-bottom : 8px;
+	padding-top    : 8px;
+}
+
+.cf-tabs.tabs-left.tabs-left-b > ul > li.active {
+}
+
+.cf-tabs.tabs-left.tabs-left-b > ul > li.active a {
+	background-image : -moz-linear-gradient(center top, #ffffff, #ffffff 25%, #e6e6e6);
+	border           : 1px solid #a5a0a0 !important;
+	border-radius    : 4px;
+}
+
+.cf-tabs.tabs-left.tabs-left-b > ul > li a:hover {
+	background-color  : #e6e6e6;
+	background-image  : -moz-linear-gradient(center top, #ffffff, #ffffff 25%, #e6e6e6);
+	background-repeat : no-repeat;
+	border-color      : #cccccc #cccccc #bbbbbb;
+	border-radius     : 4px 4px 4px 4px;
+	border-style      : solid;
+	border-width      : 1px;
+	box-shadow        : 0 1px 2px 0 #b5b5b5;
+	text-shadow       : 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+
+/* =Tabs. Icons.
+ -------------------------------------------------------------- */
+.cf-tabs ul > li i {
+	margin-right : 0.6em;
+	opacity      : 0.5;
+}
+
+.cf-tabs ul > li.active i, .cf-tabs ul > li a:hover i {
+	opacity : 1;
+}

@@ -8,6 +8,6 @@
 @import "vendor/html5-boilerplate-top.css";
 
 @import "helpers.css";
-@import "plains.css";
+@import "theme/styles.css";
 
 @import "vendor/html5-boilerplate-bottom.css";

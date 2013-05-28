@@ -1,0 +1,18 @@
+/* =Accordions.
+ -------------------------------------------------------------- */
+.accordion .accordion-heading > a {
+	background-image        : linear-gradient(to bottom, #ffffff, #f2f2f2);
+	border-top-right-radius : 3px;
+	border-top-left-radius  : 3px;
+}
+
+/* =Accordions. Icons.
+ -------------------------------------------------------------- */
+.accordion .accordion-heading > a i {
+	margin-right : 0.6em;
+	opacity      : 0.5;
+}
+
+.accordion .accordion-heading > .accordion-unfolded i, .accordion .accordion-heading > a:hover i {
+	opacity : 1 !important;
+}
