@@ -254,7 +254,7 @@
 
 /* =Tabs. Icons.
  -------------------------------------------------------------- */
-.cf-tabs ul > li i {
+.cf-tabs .box-header ul > li i {
 	margin-right : 0.6em;
 	opacity      : 0.5;
 }

@@ -163,7 +163,7 @@ ul.nav.nav-tabs.nav-stacked
 						i.icon-bar-chart
 						| Charts
 
-	li
+	li(class=(page == 'basic/images/icons' ?'active':''))
 		.accordion-group.border-radius-none.margin-bottom-none
 			.accordion-heading
 				a.accordion-toggle(data-toggle="collapse",href="#images")
@@ -171,8 +171,8 @@ ul.nav.nav-tabs.nav-stacked
 					| Images
 					i.accordion-level.icon-chevron-right.pull-right
 
-			#images.accordion-body.collapse
-				a.border-radius-none(href="/basic/images/icons")
+			#images.accordion-body.collapse(class=(page == 'basic/images/icons' ?'in':''))
+				a.border-radius-none(href="/basic/images/icons",class=(page == 'basic/images/icons' ?'active':''))
 					.accordion-inner
 						i.icon-th-large
 						| Icons

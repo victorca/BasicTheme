@@ -27,3 +27,34 @@
 	margin-top  : 2px !important;
 	opacity     : 0.25;
 }
+
+/* =FontAwesome Icons.
+ -------------------------------------------------------------- */
+.the-icons {
+	list-style-type : none;
+	margin          : 0;
+}
+
+.the-icons li {
+	border-radius   : 6px !important;
+	cursor          : pointer;
+	height          : 32px;
+	list-style-type : none;
+	line-height     : 32px;
+	padding-left    : 12px;
+}
+
+.the-icons li:hover {
+	background-color : #fbf4f4;
+}
+
+.the-icons li i {
+	margin-right : 1em;
+	font-size    : 14px;
+	width        : 32px;
+}
+
+.the-icons li:hover i:before {
+	font-size      : 28px;
+	vertical-align : -5px;
+}
