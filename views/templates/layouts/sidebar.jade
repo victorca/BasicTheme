@@ -1,0 +1,92 @@
+//.widget.logged-user-info
+	.widget-content
+		.pull-left
+			img(src="/images/icons/person.svg")
+
+		ul
+			li John Doe
+			li
+				small
+					em as Administrator
+			li
+				small
+					em Last access: 23 Jun 14:30
+
+		.btn-group
+			button.btn.btn-small.btn-info Messages
+			button.btn.btn-small.btn-info Profile
+			button.btn.btn-small.btn-danger Logout
+
+ul.nav.nav-tabs.nav-stacked
+	li
+		a.border-radius-none(href="/templates")
+			i.icon-home
+			| Dashboard
+
+	li
+		div.accordion-group.border-radius-none.margin-bottom-none
+			div.accordion-heading
+				a.accordion-toggle(data-toggle="collapse",href="#auth")
+					i.icon-comment
+					| Authentication
+					i.accordion-level.icon-chevron-right.pull-right
+
+			#auth.accordion-body.collapse
+				a.border-radius-none(href="/templates/auth/login",class=(page == 'templates/auth/login' ?'active':''))
+					.accordion-inner
+						i.icon-tags
+						| Login & Recover Password
+
+				a.border-radius-none(href="/templates/auth/signup",class=(page == 'templates/auth/signup' ?'active':''))
+					.accordion-inner
+						i.icon-comment
+						| Sign Up
+
+	li
+		a.border-radius-none(href="/templates/error")
+			i.icon-home
+			| Error Pages (403 404 405 500 503)
+
+	li
+		div.accordion-group.border-radius-none.margin-bottom-none
+			div.accordion-heading
+				a.accordion-toggle(data-toggle="collapse",href="#email")
+					i.icon-comment
+					| Email Templates
+					i.accordion-level.icon-chevron-right.pull-right
+
+			#email.accordion-body.collapse
+				a.border-radius-none(href="/templates/email/recover",class=(page == 'templates/email/recover' ?'active':''))
+					.accordion-inner
+						i.icon-tags
+						| Recover Password
+
+				a.border-radius-none(href="/templates/email/notification",class=(page == 'templates/email/notification' ?'active':''))
+					.accordion-inner
+						i.icon-comment
+						| Notification
+
+				a.border-radius-none(href="/templates/email/registration",class=(page == 'templates/email/registration' ?'active':''))
+					.accordion-inner
+						i.icon-comment
+						| Registration Confirmation
+
+	li
+		a.border-radius-none(href="/templates/invoice")
+			i.icon-home
+			| Invoice
+
+	li
+		a.border-radius-none(href="/templates/offline")
+			i.icon-home
+			| Offline Page
+
+	li
+		a.border-radius-none(href="/templates/faq")
+			i.icon-home
+			| FAQ
+
+	li
+		a.border-radius-none(href="/templates/search")
+			i.icon-home
+			| Search

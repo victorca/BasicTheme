@@ -31,4 +31,9 @@ module.exports = function (app) {
 	app.get('/forms/styles/horizontal', require('./forms/styles.js').horizontal);
 	app.get('/forms/styles/vertical', require('./forms/styles.js').vertical);
 	app.get('/forms/styles/inline', require('./forms/styles.js').inline);
+
+	/*
+	 Standalone Templates.
+	 */
+	app.get('/templates', require('./templates/index.js').index);
 };

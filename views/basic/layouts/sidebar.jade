@@ -86,7 +86,7 @@ ul.nav.nav-tabs.nav-stacked
 						i.icon-th-list
 						| Media Tables
 
-	li(class=(page == 'basic/navigation/breadcrumbs' || page == 'basic/navigation/tabs'|| page == 'basic/navigation/pills'|| page == 'basic/navigation/collapsible' ?'active':''))
+	li(class=(page == 'basic/navigation/breadcrumbs' || page == 'basic/navigation/tabs'|| page == 'basic/navigation/pills'|| page == 'basic/navigation/collapsible'|| page == 'basic/navigation/pagination' ?'active':''))
 		.accordion-group.border-radius-none.margin-bottom-none
 			.accordion-heading
 				a.accordion-toggle(data-toggle="collapse",href="#navigation")
@@ -94,7 +94,7 @@ ul.nav.nav-tabs.nav-stacked
 					| Navigation
 					i.accordion-level.icon-chevron-right.pull-right(class=(page == 'basic/navigation/breadcrumbs' || page == 'basic/navigation/tabs' ?'icon-white':''))
 
-			#navigation.accordion-body.collapse(class=(page == 'basic/navigation/breadcrumbs' || page == 'basic/navigation/tabs' || page == 'basic/navigation/pills' || page == 'basic/navigation/collapsible' ?'in':''))
+			#navigation.accordion-body.collapse(class=(page == 'basic/navigation/breadcrumbs' || page == 'basic/navigation/tabs' || page == 'basic/navigation/pills' || page == 'basic/navigation/collapsible' || page == 'basic/navigation/pagination'?'in':''))
 				a.border-radius-none(href="/basic/navigation/breadcrumbs",class=(page == 'basic/navigation/breadcrumbs' ?'active':''))
 					.accordion-inner
 						i.icon-bookmark
@@ -115,7 +115,7 @@ ul.nav.nav-tabs.nav-stacked
 						i.icon-align-justify
 						| Collapsibles
 
-				a.border-radius-none(href="/basic/navigation/pagination")
+				a.border-radius-none(href="/basic/navigation/pagination",class=(page == 'basic/navigation/pagination' ?'active':''))
 					.accordion-inner
 						i.icon-th-list
 						| Pagination
