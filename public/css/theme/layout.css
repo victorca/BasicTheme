@@ -123,11 +123,13 @@ body {
 	color         : #404040;
 	text-shadow   : 0 1px 0 #ffffff;
 
+	margin-bottom: -1px;
 	padding-left  : 2em;
 }
 
 .sidebar .nav li .accordion-body a:last-of-type .accordion-inner {
 	border-bottom : 1px solid #b9c0cc;
+	margin-bottom: 0;
 }
 
 .sidebar .nav li .accordion-body .accordion-inner:hover {
