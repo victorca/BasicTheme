@@ -15,7 +15,7 @@ block content
 	.row-fluid
 		.span12
 			form.form-horizontal(action='#')
-				legend Input fields
+				legend Simple input fields
 				.row-fluid
 					.span4.form-control-label
 						label(for='text') Input type text
@@ -88,6 +88,39 @@ block content
 
 				.row-fluid
 					.span4.form-control-label
+						label Prepended content
+					.form-controls.span8
+						.input-prepend
+							span.add-on @
+							input(type="text",placeholder="Username")
+
+				.row-fluid
+					.span4.form-control-label
+						label Appended content
+					.form-controls.span8
+						.input-append
+							input(type="text")
+							span.add-on .00
+
+				.row-fluid
+					.span4.form-control-label
+						label Combined
+					.form-controls.span8
+						.input-prepend.input-append
+							span.add-on $
+							input.span10(type="text")
+							span.add-on .00
+
+				.row-fluid.form-actions
+					.span4
+					.form-controls.span8
+						button.btn.btn-primary(type="submit") Save changes
+						button.btn.btn-danger(type="button") Cancel
+
+			form.form-horizontal(action='#')
+				legend Textarea fields
+				.row-fluid
+					.span4.form-control-label
 						label(for="textarea") Textarea field
 							br
 							span.description Some explanation here.
@@ -99,12 +132,6 @@ block content
 						label(for='textareap') Textarea placeholder
 					.form-controls.span8
 						textarea#textareap.span12(placeholder="Textarea field placeholder...",name="textarea")
-
-				.row-fluid.form-actions
-					.span4
-					.form-controls.span8
-						button(type="submit", class="btn btn-primary") Save changes
-						button(type="button",class="btn btn-danger") Cancel
 
 	.row-fluid
 		.span6
@@ -313,14 +340,193 @@ block content
 						label
 							input#file1(type="file")
 
-	row-fluid
-		.span12
-			form.form-horizontal(action='#')
-				legend Buttons
-				.row-fluid
-					.span4.form-control-label
-						label(for='file1') Buttons
-					.form-controls.span8
+	h2 Buttons
+
+	.row-fluid
+		.span6
+			.box
+				.box-header Default buttons
+				.box-content
+					button.btn Default
+					button.btn.btn-primary Primary
+					button.btn.btn-info Info
+					button.btn.btn-success Success
+					button.btn.btn-warning Warning
+					button.btn.btn-danger Danger
+					button.btn.btn-inverse Inverse
+					button.btn.btn-link Link
+
+			.box
+				.box-header Disabled state
+				.box-content
+					a.btn.btn-large.btn-primary.disabled(href="#") Primary link
+					| &nbsp;
+					button.btn.btn-large.disabled(type="button") Link
+
+		.span6.box
+			.box-header Button sizes
+			.box-content
+				p
+					button.btn.btn-large.btn-primary(type="button") Large button
+					| &nbsp;
+					button.btn.btn-large(type="button") Large button
+
+				p
+					button.btn.btn-primary(type="button") Default button
+					| &nbsp;
+					button.btn(type="button") Default button
+
+				p
+					button.btn.btn-small.btn-primary(type="button") Small button
+					| &nbsp;
+					button.btn.btn-small(type="button") Small button
+
+				p
+					button.btn.btn-mini.btn-primary(type="button") Mini button
+					| &nbsp;
+					button.btn.btn-mini(type="button") Mini button
+
+	.row-fluid
+		.span6
+			.box
+				.box-header Block level buttons
+				.box-content
+					button.btn.btn-large.btn-block.btn-primary(type="button") Block level button
+					button.btn.btn-large.btn-block(type="button") Block level button
+
+			.box
+				.box-header Search form
+				.box-content
+					form.form-search.align-center
+						.input-append
+							input.search-query(type="text")
+							button.btn(type="submit") Search
+
+						br
+						br
+						.input-prepend
+							button.btn(type="submit") Search
+							input.search-query(type="text")
+
+		.span6.box
+			.box-header Action buttons
+			.box-content
+				.input-append
+					input(type="text")
+					button.btn(type="button") Go!
+				br
+				.input-append
+					input(type="text")
+					button.btn(type="button") Search
+					button.btn(type="button") Options
+
+				br
+				.input-append
+					input(type="text")
+					.btn-group
+						button.btn.dropdown-toggle(data-toggle="dropdown")
+							| Action
+							span.caret
+						ul.dropdown-menu
+							li
+								a(href="#") Action
+							li
+								a(href="#") Another action
+							li
+								a(href="#") Something else here
+							li.divider
+							li
+								a(href="#") Separated link
+
+				br
+				.input-prepend
+					.btn-group
+						button.btn.dropdown-toggle(data-toggle="dropdown")
+							| Action
+							span.caret
+						ul.dropdown-menu
+							li
+								a(href="#") Action
+							li
+								a(href="#") Another action
+							li
+								a(href="#") Something else here
+							li.divider
+							li
+								a(href="#") Separated link
+					input(type="text")
+
+				br
+				.input-append.input-prepend
+					.btn-group
+						button.btn.dropdown-toggle(data-toggle="dropdown")
+							| Action
+							span.caret
+						ul.dropdown-menu
+							li
+								a(href="#") Action
+							li
+								a(href="#") Another action
+							li
+								a(href="#") Something else here
+							li.divider
+							li
+								a(href="#") Separated link
+					input(type="text")
+					.btn-group
+						button.btn.dropdown-toggle(data-toggle="dropdown")
+							| Action
+							span.caret
+						ul.dropdown-menu
+							li
+								a(href="#") Action
+							li
+								a(href="#") Another action
+							li
+								a(href="#") Something else here
+							li.divider
+							li
+								a(href="#") Separated link
+
+				br
+				.input-prepend
+					.btn-group
+						button.btn Action
+						button.btn.dropdown-toggle(data-toggle="dropdown")
+							span.caret
+
+						ul.dropdown-menu
+							li
+								a(href="#") Action
+							li
+								a(href="#") Another action
+							li
+								a(href="#") Something else here
+							li.divider
+							li
+								a(href="#") Separated link
+
+					input(type="text")
+
+				br
+				.input-append
+					input(type="text")
+
+					.btn-group
+						button.btn Action
+						button.btn.dropdown-toggle(data-toggle="dropdown")
+							span.caret
+
+						ul.dropdown-menu
+							li
+								a(href="#") Action
+							li
+								a(href="#") Another action
+							li
+								a(href="#") Something else here
+							li.divider
+							li
+								a(href="#") Separated link
 
 block scripts
 	script(src="/js/vendor/pixelmatrix-uniform/jquery.uniform.min.js")
