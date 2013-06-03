@@ -52,3 +52,18 @@
  */
 window.prettyPrint && prettyPrint();
 
+/*
+ Add support messaging
+ */
+(function ($) {
+	/*
+	 Add support for tooltips
+	 */
+	$(".tip").tooltip();
+
+
+	/*
+	 Add support for popovers
+	 */
+	$(".cf-popover").popover();
+})(jQuery);

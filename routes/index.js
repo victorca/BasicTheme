@@ -8,6 +8,8 @@ module.exports = function (app) {
 
 	app.get('/basic/typography', require('./basic/typography.js').index);
 
+	app.get('/basic/messaging/tooltips', require('./basic/messaging.js').tooltips);
+
 	app.get('/basic/tables/simple', require('./basic/tables.js').simple);
 	app.get('/basic/tables/data', require('./basic/tables.js').data);
 

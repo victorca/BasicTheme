@@ -1,0 +1,178 @@
+extends ../../layouts/layout
+
+block sidebar
+	include ../layouts/sidebar
+
+block content
+	.content-header
+		.content-header-title
+			h2 Tooltips Examples
+			span.description A single example shown as it might be displayed across multiple pages.
+
+	.row-fluid
+		.span6.box
+			.box-header Popovers
+			.box-content
+				table(style="margin:auto")
+					tr
+						td
+							label(data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.', data-placement='top', rel='popover', href='#', data-original-title='Popover on top').btn.btn-small.cf-popover
+								a(href="#") Popover on Top
+						td
+							label(data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.', data-placement='right', rel='popover', href='#', data-original-title='Popover on Right').btn.btn-small.cf-popover
+								a(href="#") Popover on Right
+						td
+							label(data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.', data-placement='bottom', rel='popover', href='#', data-original-title='Popover on Bottom').btn.btn-small.cf-popover
+								a(href="#") Popover on Bottom
+						td
+							label(data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.', data-placement='left', rel='popover', href='#', data-original-title='Popover on Left').btn.btn-small.cf-popover
+								a(href="#") Popover on Left
+				.bs-docs-example.popover-demo
+					p.muted(style='margin-bottom: 0;')
+						| Tight pants next level keffiyeh
+						a(rel='popover', href='#', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.',data-placement='top').cf-popover  you probably
+						|  haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel
+						a(rel='popover', href='#', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.',data-placement='right').cf-popover  have a
+						|  terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan
+						a(rel='popover', href='#', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.',data-placement='bottom').cf-popover  whatever keytar
+						| ,  scenester farm-to-table banksy Austin
+						a(rel='popover', href='#', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.',data-placement='left').cf-popover  twitter handle
+						|  freegan cred raw denim single-origin coffee viral.
+		.span6.box
+			.box-header Tooltips
+			.box-content
+				table(style="margin:auto;")
+					tr
+						td
+							span(data-placement='top', rel='tooltip', data-original-title='Tooltip on Top').btn.btn-small.tip
+								a(href="#") Tooltip on Top
+						td
+							span(data-placement='right', rel='tooltip', data-original-title='Tooltip on Right').btn.btn-small.tip
+								a(href="#") Tooltip on Right
+						td
+							span(data-placement='bottom', rel='tooltip', data-original-title='Tooltip on Bottom').btn.btn-small.tip
+								a(href="#") Tooltip on Bottom
+						td
+							span(data-placement='left', rel='tooltip', data-original-title='Tooltip on Left').btn.btn-small.tip
+								a(href="#") Tooltip on Left
+
+				.bs-docs-example.tooltip-demo
+					p.muted(style='margin-bottom: 0;')
+						| Tight pants next level keffiyeh
+						a(rel='tooltip', href='#', data-original-title='Default tooltip',data-placement='top').tip  you probably
+						|  haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel
+						a(rel='tooltip', href='#', data-original-title='Another tooltip',data-placement='right').tip  have a
+						|  terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan
+						a(rel='tooltip', href='#', data-original-title='Another one here too',data-placement='bottom').tip  whatever keytar
+						| ,  scenester farm-to-table banksy Austin
+						a(rel='tooltip', href='#', data-original-title='The last tip!',data-placement='left').tip  twitter handle
+						|  freegan cred raw denim single-origin coffee viral.
+
+
+	.row-fluid
+		.span12.box
+			.box-header Labels and Badges
+			.box-content
+				.row-fluid
+					.span6.box.margin-bottom-none
+						.box-content.border-none
+							table.table.table-striped
+								thead
+									tr
+										th Labels
+										th Description
+								tbody
+									tr
+										td
+											span.label Default
+										td
+											label Default Label
+									tr
+										td
+											span.label.label-success Success
+										td
+											label Success Label
+									tr
+										td
+											span.label.label-important Important
+										td
+											label Important Label
+									tr
+										td
+											span.label.label-warning Warning
+										td
+											label Warning Label
+									tr
+										td
+											span.label.label-info Info
+										td
+											label Info Label
+									tr
+										td
+											span.label.label-inverse Inverse
+										td
+											label Inverse Label
+					.span6.box.margin-bottom-none
+						.box-content.border-none
+							table.table.table-striped
+								thead
+									tr
+										th Badges
+										th Description
+								tbody
+									tr
+										td
+											span.badge 1
+										td
+											label Default Badge
+									tr
+										td
+											span.badge.badge-success 2
+										td
+											label Success Badge
+									tr
+										td
+											span.badge.badge-important 3
+										td
+											label Important Badge
+									tr
+										td
+											span.badge.badge-warning 4
+										td
+											label Warning Badge
+									tr
+										td
+											span.badge.badge-info 5
+										td
+											label Info Badge
+									tr
+										td
+											span.badge.badge-inverse 6
+										td
+											label Inverse Badge
+
+	.row-fluid
+		.span12.box
+			.box-header Alerts
+			.box-content
+				.alert.alert-block
+					button.close(type='button', data-dismiss='alert') &times;
+					strong Warning!
+						|  Best check yo self, you're not looking too good.
+				.alert.alert-error.alert-block
+					button.close(type='button', data-dismiss='alert') &times;
+					strong Error!
+						|  Change a few things up and try submitting again.
+				.alert.alert-success.alert-block
+					button.close(type='button', data-dismiss='alert') &times;
+					strong Well done!
+						|  You successfully read this important alert message.
+				.alert.alert-info.alert-block
+					button.close(type='button', data-dismiss='alert') &times;
+					strong Info!
+						|  This alert needs your attention.
+				.alert.alert-block
+					button.close(type='button', data-dismiss='alert') &times;
+					h4 Warning!
+					p Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna.
+
