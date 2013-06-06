@@ -2,6 +2,7 @@ extends ../../layouts/layout
 
 block styles
 	link(rel="stylesheet",href="/js/vendor/pixelmatrix-uniform/themes/default/css/uniform.default.min.css",media="screen")
+	link(rel="stylesheet",href="/js/vendor/bootstrap-daterangepicker/daterangepicker.css",media="screen")
 
 block sidebar
 	include ../layouts/sidebar
@@ -92,3 +93,62 @@ block content
 					.bar.bar-success(style="width: 35%;")
 					.bar.bar-warning(style="width: 20%;")
 					.bar.bar-danger(style="width: 10%;")
+
+		.span4.box
+			.box-header Mini progress bars
+			.box-content
+				.progress.progress-info.progress-mini
+					.bar(style="width: 10%;")
+				.progress.progress-mini
+					.bar(style="width: 25%;")
+				.progress.progress-success.progress-mini
+					.bar(style="width: 50%;")
+				.progress.progress-warning.progress-mini
+					.bar(style="width: 75%;")
+				.progress.progress-danger.progress-mini
+					.bar(style="width: 100%;")
+
+	.row-fluid
+		.span12
+			form.form-horizontal(action='#')
+				legend Daterange Picker
+				.row-fluid
+					.span4.form-control-label
+						label(for='text') Simple
+					.span8.form-controls
+						.input-append
+							input#daterangepicker-simple(type="text",name="reservation",value="03/18/2013 - 03/23/2013")
+							span.add-on
+								i.icon-calendar
+
+				.row-fluid
+					.span4.form-control-label
+						label(for='text') Options Usage
+					.span8.form-controls
+						.span4#daterangepicker-reportrange(style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc")
+							i.icon-calendar
+							| &nbsp;&nbsp;
+							span June 5, 2013 - June 5, 2013
+							b.pull-right.caret(style="margin-top: 8px")
+
+				.row-fluid
+					.span4.form-control-label
+						label(for='text') Month/Year Dropdowns
+					.span8.form-controls
+						.input-append
+							input#daterangepicker-dropdown(type="text")
+							span.add-on
+								i.icon-calendar
+
+				.row-fluid
+					.span4.form-control-label
+						label(for='text') Range Limit
+					.span8.form-controls
+						.input-append
+							input#daterangepicker-range(type="text")
+							span.add-on
+								i.icon-calendar
+
+block scripts
+	script(src="/js/vendor/bootstrap-daterangepicker/moment.min.js")
+	script(src="/js/vendor/bootstrap-daterangepicker/daterangepicker.js")

@@ -1,0 +1,11 @@
+/* =Progress bars.
+ -------------------------------------------------------------- */
+.progress:last-child {
+	margin-bottom: 0;
+}
+
+/* =Progress bars. Mini.
+ -------------------------------------------------------------- */
+.progress-mini {
+	height: 7px;
+}
