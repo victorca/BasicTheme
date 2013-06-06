@@ -154,6 +154,73 @@ block content
 							span.add-on
 								i.icon-calendar
 
+	h2 Knobs
+	.row-fluid
+		.span4.box
+			.box-header Disabled display input
+			.box-content.align-center
+				input.knob(data-width="100",data-displayInput="false",value="35")
+
+		.span4.box
+			.box-header Cursor mode
+			.box-content.align-center
+				input.knob(data-width="150",data-cursor="true",data-fgColor="#222222",data-thickness=".3",value="29")
+
+		.span4.box
+			.box-header Display previous value
+			.box-content.align-center
+				input.knob(data-width="200",data-min="-100",data-displayPrevious="true",value="44")
+
+	.row-fluid
+		.span4.box
+			.box-header Angle offset
+			.box-content.align-center
+				input.knob(data-angleOffset="90",data-linecap="round",value="35")
+
+		.span4.box
+			.box-header Angle offset and arc
+			.box-content.align-center
+				input.knob(data-angleOffset="-125",data-angleArc="250",data-fgColor="#66EE66",value="35")
+
+		.span4.box
+			.box-header 5-digit values, step 1000
+			.box-content.align-center
+				input.knob(data-min="-15000",data-displayPrevious="true",data-max="15000",data-step="1000",value="-11000")
+
+	.row-fluid
+		.span6.box
+			.box-header Overloaded draw method with Tron skin
+			.box-content.align-center.bg-inverse
+				input.knob(data-thickness=".2",value="75",data-cursor="true",data-skin="tron",data-fgcolor="#ffec03",data-displayprevious="true",data-width="75")
+				input.knob(value="75",data-thickness=".2",data-skin="tron",data-fgcolor="#ffec03",data-displayprevious="true",data-width="150")
+				input.knob(value="35",data-thickness=".1",data-skin="tron",data-fgcolor="#C0ffff",data-angleoffset="180",data-width="150")
+
+		.span6.box
+			.box-header Superpose (clock)
+			.box-content.align-center.bg-inverse(style="height:23em;")
+				div(style="position:relative;width:350px;margin:auto")
+					div(style="position:absolute;left:10px;top:10px")
+						input.knob.hour(data-min="0",data-max="24",data-bgColor="#333",data-fgColor="#ffec03",data-displayInput="false",data-width="300",data-height="300",data-thickness=".3")
+					div(style="position:absolute;left:60px;top:60px")
+						input.knob.minute(data-min="0",data-max="60",data-bgColor="#333",data-displayInput="false",data-width="200",data-height="200",data-thickness=".45")
+					div(style="position:absolute;left:110px;top:110px")
+						input.knob.second(data-min="0",data-max="60",data-bgColor="#333",data-fgColor="rgb(127, 255, 0)",data-displayInput="false",data-width="100",data-height="100",data-thickness=".3")
+
+	.row-fluid
+		.span4.box
+			.box-header Readonly
+			.box-content.align-center
+				input.knob(value="22",data-readonly="true",data-thickness=".4",data-fgcolor="chartreuse",disabled="disabled")
+
+		.span4.box
+			.box-header Infinite || iPod click wheel
+			.box-content.align-center.bg-inverse
+				input.knob-infinite(data-cursor="true",data-displayinput="false",data-bgcolor="#FFFFFF",data-fgcolor="#AAAAAA",data-thickness=".5",data-width="150")
+				div(style="float:right;margin-top:3em;margin-left:-15em")
+					div.ival(style="width:80px;text-align:center;font-size:50px;color:#AAA") 9
+					div.idir(style="width: 80px; text-align: center; font-size: 50px; display: none;") -
+
 block scripts
 	script(src="/js/vendor/bootstrap-daterangepicker/moment.min.js")
 	script(src="/js/vendor/bootstrap-daterangepicker/daterangepicker.js")
+	script(src="/js/vendor/jQuery-Knob/jquery.knob.js")
