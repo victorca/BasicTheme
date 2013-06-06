@@ -1,0 +1,94 @@
+extends ../../layouts/layout
+
+block styles
+	link(rel="stylesheet",href="/js/vendor/pixelmatrix-uniform/themes/default/css/uniform.default.min.css",media="screen")
+
+block sidebar
+	include ../layouts/sidebar
+
+block content
+	.content-header
+		.content-header-title
+			h2 Tabs
+			span.description A single example shown as it might be displayed across multiple pages.
+
+	h2 Progress bars
+	.row-fluid
+		.span4.box
+			.box-header Simple
+			.box-content
+				.progress.progress-info
+					.bar(style="width: 10%;")
+				.progress
+					.bar(style="width: 25%;")
+				.progress.progress-success
+					.bar(style="width: 50%;")
+				.progress.progress-warning
+					.bar(style="width: 75%;")
+				.progress.progress-danger
+					.bar(style="width: 100%;")
+
+		.span4.box
+			.box-header Stripped
+			.box-content
+				.progress.progress-info.progress-striped
+					.bar(style="width: 10%;")
+				.progress.progress-striped
+					.bar(style="width: 25%;")
+				.progress.progress-success.progress-striped
+					.bar(style="width: 50%;")
+				.progress.progress-warning.progress-striped
+					.bar(style="width: 75%;")
+				.progress.progress-danger.progress-striped
+					.bar(style="width: 100%;")
+
+		.span4.box
+			.box-header Animated
+			.box-content
+				.progress.progress-info.progress-striped.active
+					.bar(style="width: 10%;")
+				.progress.progress-striped.active
+					.bar(style="width: 25%;")
+				.progress.progress-success.progress-striped.active
+					.bar(style="width: 50%;")
+				.progress.progress-warning.progress-striped.active
+					.bar(style="width: 75%;")
+				.progress.progress-danger.progress-striped.active
+					.bar(style="width: 100%;")
+
+	.row-fluid
+		.span4.box
+			.box-header Informative Text
+			.box-content
+				.progress.progress-info.progress-striped
+					.bar(style="width: 10%;") 10%
+				.progress.progress-striped
+					.bar(style="width: 25%;") 25%
+				.progress.progress-success.progress-striped
+					.bar(style="width: 50%;") 50%
+				.progress.progress-warning.progress-striped
+					.bar(style="width: 75%;") 75%
+				.progress.progress-danger.progress-striped
+					.bar(style="width: 100%;") 100%
+
+		.span4.box
+			.box-header Auto-updated progress bars sample
+			.box-content
+				.progress.progress-info.progress-striped.progress-preview
+					.bar(style="width: 10%;") 10%
+				.progress.progress-striped.progress-preview
+					.bar(style="width: 25%;") 25%
+				.progress.progress-success.progress-striped.progress-preview
+					.bar(style="width: 50%;") 50%
+				.progress.progress-warning.progress-striped.progress-preview
+					.bar(style="width: 75%;") 75%
+				.progress.progress-danger.progress-striped.progress-preview
+					.bar(style="width: 100%;") 100%
+
+		.span4.box
+			.box-header Stacked
+			.box-content
+				.progress
+					.bar.bar-success(style="width: 35%;")
+					.bar.bar-warning(style="width: 20%;")
+					.bar.bar-danger(style="width: 10%;")

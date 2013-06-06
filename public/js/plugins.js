@@ -53,6 +53,24 @@
 window.prettyPrint && prettyPrint();
 
 /*
+ Auto-updated progress bars.
+ */
+$('.progress-preview').each(function(){
+	var el = $(this);
+	function up(){
+		var width = el.find('.bar').width();
+		var parentWidth = el.width();
+		var percent = Math.round((100*width/parentWidth));
+		var plus = Math.round(Math.random() * 10);
+		var newPercent = percent + plus;
+		if(newPercent > 100){
+			newPercent = 0;
+		}
+		el.find('.bar').width(newPercent+"%").html(newPercent+"%");
+		setTimeout(up, 1500);
+	}
+	up();
+});/*
  Add support messaging
  */
 (function ($) {

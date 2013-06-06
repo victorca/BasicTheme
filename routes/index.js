@@ -29,6 +29,7 @@ module.exports = function (app) {
 	 */
 	app.get('/forms', require('./forms/basic.js').index);
 	app.get('/forms/basic', require('./forms/basic.js').index);
+	app.get('/forms/advanced', require('./forms/advanced.js').index);
 
 	app.get('/forms/styles/horizontal', require('./forms/styles.js').horizontal);
 	app.get('/forms/styles/vertical', require('./forms/styles.js').vertical);
