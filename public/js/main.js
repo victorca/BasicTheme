@@ -107,4 +107,9 @@
 	 * Colorpickers.
 	 */
 	$('.colorpicker').colorpicker();
+
+	/*
+	 * Datepickers.
+	 */
+	$('.datepicker').datepicker();
 })(jQuery);
