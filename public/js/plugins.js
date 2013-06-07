@@ -944,7 +944,11 @@ window.prettyPrint && prettyPrint();
 		});
 
 		// Image.
-		var datax = [[["/images/backgrounds/hs-2004-27-a-large-web.jpg", -10, -10, 10, 10]]];
+		var datax = [
+			[
+				["/images/backgrounds/hs-2004-27-a-large-web.jpg", -10, -10, 10, 10]
+			]
+		];
 
 		var options = {
 			series: {
@@ -952,11 +956,11 @@ window.prettyPrint && prettyPrint();
 					show: true
 				}
 			},
-			xaxis: {
+			xaxis : {
 				min: -8,
 				max: 4
 			},
-			yaxis: {
+			yaxis : {
 				min: -8,
 				max: 4
 			}
@@ -1073,7 +1077,8 @@ window.prettyPrint && prettyPrint();
 			}
 		});
 	}
-})(jQuery);/*
+})(jQuery);
+/*
  Knobs.
  */
 function clock() {
@@ -1089,7 +1094,9 @@ function clock() {
 	$h.val(h).trigger("change");
 	setTimeout("clock()", 1000);
 }
-clock();});/*
+clock();
+
+/*
  Add support messaging
  */
 (function ($) {
