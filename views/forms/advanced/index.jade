@@ -5,6 +5,7 @@ block styles
 	link(rel="stylesheet",href="/js/vendor/bootstrap-daterangepicker/daterangepicker.css",media="screen")
 	link(rel="stylesheet",href="/js/vendor/colorpicker/css/colorpicker.css",media="screen")
 	link(rel="stylesheet",href="/js/vendor/datepicker/css/datepicker.css",media="screen")
+	link(rel="stylesheet",href="/js/vendor/timepicker/bootstrap-timepicker.min.css",media="screen")
 
 block sidebar
 	include ../layouts/sidebar
@@ -140,6 +141,27 @@ block content
 							input(type="text",value="")
 							span.add-on
 								i(style="background-color: rgb(255, 146, 180)")
+
+	.row-fluid
+		.span12
+			form.form-horizontal(action='#')
+				legend Timepicker
+				.row-fluid
+					.span4.form-control-label
+						label(for='text') As component
+					.span8.form-controls
+						.input-append.bootstrap-timepicker
+							input.timepicker.input-small(type="text")
+							span.add-on
+								i.icon-time
+
+				.row-fluid
+					.span4.form-control-label
+						label(for='text') Without component markup
+					.span8.form-controls
+						.bootstrap-timepicker
+							input.timepicker.input-small(type="text")
+							i.icon-time(style="margin: -2px 0 0 -19px; pointer-events: none; position: relative;")
 
 	.row-fluid
 		.span12
@@ -291,3 +313,4 @@ block scripts
 	script(src="/js/vendor/jQuery-Knob/jquery.knob.js")
 	script(src="/js/vendor/colorpicker/js/bootstrap-colorpicker.js")
 	script(src="/js/vendor/datepicker/js/bootstrap-datepicker.js")
+	script(src="/js/vendor/timepicker/bootstrap-timepicker.min.js")

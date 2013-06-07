@@ -106,10 +106,21 @@
 	/*
 	 * Colorpickers.
 	 */
-	$('.colorpicker').colorpicker();
+	if ($.fn.colorpicker) {
+		$('.colorpicker').colorpicker();
+	}
 
 	/*
 	 * Datepickers.
 	 */
-	$('.datepicker').datepicker();
+	if ($.fn.datepicker) {
+		$('.datepicker').datepicker();
+	}
+
+	/*
+	 * Timepickers.
+	 */
+	if ($.fn.timepicker) {
+		$('.timepicker').timepicker();
+	}
 })(jQuery);
