@@ -1,0 +1,173 @@
+extends ../../layouts/layout
+
+block sidebar
+	include ../layouts/sidebar
+
+block content
+	.content-header
+		.content-header-title
+			h2 Breadcrumbs Examples
+			span.description A single example shown as it might be displayed across multiple pages.
+
+	h2 Basic Usage
+	.row-fluid
+		.span6.box
+			.box-header Basic
+			.box-content
+				p You don't have to do much to get an attractive plot. Create a placeholder, make sure it has dimensions (so Flot knows at what size to draw the plot), then call the plot function with your data.
+
+				p The axes are automatically scaled.
+				br
+				.chart-placeholder#chart-basic(style="height:300px")
+
+		.span6.box
+			.box-header Series Types
+			.box-content
+				p Flot supports lines, points, filled areas, bars and any combinations of these, in the same plot and even on the same data series.
+				br
+				.chart-placeholder#chart-series(style="height:300px")
+
+	.row-fluid
+		.span6.box
+			.box-header Basic Options
+			.box-content
+				p There are plenty of options you can set to control the precise looks of your plot. You can control the ticks on the axes, the legend, the graph type, etc.
+
+				p Flot goes to great lengths to provide sensible defaults so that you don't have to customize much for a good-looking result.
+				br
+				.chart-placeholder#chart-options(style="height:300px")
+
+		.span6.box
+			.box-header Annotations
+			.box-content
+				p Flot has support for simple background decorations such as lines and rectangles. They can be useful for marking up certain areas. You can easily add any HTML you need with standard DOM manipulation, e.g. for labels. For drawing custom shapes there is also direct access to the canvas.
+				br
+				.chart-placeholder#chart-annotations(style="height:300px")
+
+	.row-fluid
+		.span12.box
+			.box-header Real time data
+			.box-content
+				p You can update a chart periodically to get a real-time effect by using a timer to insert the new data in the plot and redraw it.
+				br
+				.chart-placeholder#chart-real-time(style="height:300px")
+
+	h2 Interactivity
+	.row-fluid
+		.span12.box
+			.box-header Toggling Series
+			.box-content
+				p Since all data is available client-side, it's pretty easy to make the plot interactive. Try turning countries on and off with the checkboxes next to the plot.
+
+				p#choices
+				.chart-placeholder#chart-toggling(style="height:300px")
+
+	.row-fluid
+		.span6.box
+			.box-header Selection
+			.box-content
+
+	.row-fluid
+		.span6.box
+			.box-header Selection and zooming
+			.box-content
+
+		.span6.box
+			.box-header Interactivity
+			.box-content
+
+	.row-fluid
+		.span6.box
+			.box-header Navigation
+			.box-content
+
+		.span6.box
+			.box-header Resizing
+			.box-content
+
+	h2 Additional Features
+	.row-fluid
+		.span6.box
+			.box-header Symbols
+			.box-content
+				p Points can be marked in several ways, with circles being the built-in default. For other point types, you can define a callback function to draw the symbol. Some common symbols are available in the symbol plugin.
+				br
+				.chart-placeholder#chart-symbols(style="height:300px")
+
+		.span6.box
+			.box-header Time Axes
+			.box-content
+
+	.row-fluid
+		.span6.box
+			.box-header Visitors
+			.box-content
+
+		.span6.box
+			.box-header Time zones
+			.box-content
+
+	.row-fluid
+		.span6.box
+			.box-header Multiple axes
+			.box-content
+
+		.span6.box
+			.box-header Interacting with axes
+			.box-content
+
+	.row-fluid
+		.span6.box
+			.box-header Thresholds
+			.box-content
+				p With the threshold plugin, you can apply a specific color to the part of a data series below a threshold. This is can be useful for highlighting negative values, e.g. when displaying net results or what's in stock.
+				br
+				.chart-placeholder#chart-threshold(style="height:300px")
+
+		.span6.box
+			.box-header Stacking
+			.box-content
+
+	.row-fluid
+		.span6.box
+			.box-header Percentiles
+			.box-content
+				p For each point of a filled curve, you can specify an arbitrary bottom. As this example illustrates, this can be useful for plotting percentiles. If you have the data sets available without appropriate fill bottoms, you can use the fillbetween plugin to compute the data point bottoms automatically.
+				br
+				.chart-placeholder#chart-percentile(style="height:300px")
+
+		.span6.box
+			.box-header Tracking
+			.box-content
+
+	.row-fluid
+		.span6.box
+			.box-header Image Plots
+			.box-content
+				p With the image plugin, you can plot static images against a set of axes. This is for useful for adding ticks to complex prerendered visualizations. Instead of inputting data points, you specify the images and where their two opposite corners are supposed to be in plot space.
+
+				p Images represent a little further complication because you need to make sure they are loaded before you can use them (Flot skips incomplete images). The plugin comes with a couple of helpers for doing that.
+				br
+				.chart-placeholder#chart-image(style="height:300px")
+
+		.span6.box
+			.box-header Error Bars
+			.box-content
+				p With the errorbars plugin you can plot error bars to show standard deviation and other useful statistical properties.
+				br
+				.chart-placeholder#chart-error(style="height:300px")
+
+	.row-fluid
+		.span6.box
+			.box-header Pie Charts
+			.box-content
+
+block scripts
+	// [if lte IE 8]><script src="/js/vendor/jquery-flot/excanvas.min.js"></script><![endif]
+	script(src="/js/vendor/jquery-flot/jquery.flot.js")
+	script(src="/js/vendor/jquery-flot/jquery.flot.symbol.js")
+	script(src="/js/vendor/jquery-flot/jquery.flot.threshold.js")
+	script(src="/js/vendor/jquery-flot/jquery.flot.fillbetween.js")
+	script(src="/js/vendor/jquery-flot/jquery.flot.errorbars.js")
+	script(src="/js/vendor/jquery-flot/jquery.flot.navigate.js")
+	script(src="/js/vendor/jquery-flot/jquery.flot.image.js")

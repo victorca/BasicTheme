@@ -1,0 +1,16 @@
+/* =Charts.
+ -------------------------------------------------------------- */
+#choices {
+	text-align: center;
+}
+#choices input {
+	margin-top: 0;
+}
+#choices label {
+	display: inline-block;
+	margin-left: 0.5em;
+	margin-right: 1.5em;
+}
+#choices br {
+	display: none !important;
+}
