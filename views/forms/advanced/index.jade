@@ -3,6 +3,7 @@ extends ../../layouts/layout
 block styles
 	link(rel="stylesheet",href="/js/vendor/pixelmatrix-uniform/themes/default/css/uniform.default.min.css",media="screen")
 	link(rel="stylesheet",href="/js/vendor/bootstrap-daterangepicker/daterangepicker.css",media="screen")
+	link(rel="stylesheet",href="/js/vendor/colorpicker/css/colorpicker.css",media="screen")
 
 block sidebar
 	include ../layouts/sidebar
@@ -117,6 +118,31 @@ block content
 	.row-fluid
 		.span12
 			form.form-horizontal(action='#')
+				legend Colorpicker
+				.row-fluid
+					.span4.form-control-label
+						label(for='text') Attached to a field with hex format.
+					.span8.form-controls
+						input.colorpicker(type="text",value="#8fff00")
+
+				.row-fluid
+					.span4.form-control-label
+						label(for='text') Attached to a field with the rgba format specified via data tag.
+					.span8.form-controls
+						input.colorpicker(type="text",value="rgb(0,194,255,0.78)",data-color-format="rgba")
+
+				.row-fluid
+					.span4.form-control-label
+						label(for='text') As component
+					.span8.form-controls
+						.input-append.color.colorpicker(data-color="rgb(255, 146, 180)",data-color-format="rgb",readonly="readonly")
+							input(type="text",value="")
+							span.add-on
+								i(style="background-color: rgb(255, 146, 180)")
+
+	.row-fluid
+		.span12
+			form.form-horizontal(action='#')
 				legend Daterange Picker
 				.row-fluid
 					.span4.form-control-label
@@ -225,3 +251,4 @@ block scripts
 	script(src="/js/vendor/bootstrap-daterangepicker/moment.min.js")
 	script(src="/js/vendor/bootstrap-daterangepicker/daterangepicker.js")
 	script(src="/js/vendor/jQuery-Knob/jquery.knob.js")
+	script(src="/js/vendor/colorpicker/js/bootstrap-colorpicker.js")

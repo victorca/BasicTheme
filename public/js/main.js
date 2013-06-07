@@ -102,4 +102,9 @@
 			}
 		});
 	}
+
+	/*
+	 * Colorpickers.
+	 */
+	$('.colorpicker').colorpicker();
 })(jQuery);
