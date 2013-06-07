@@ -6,6 +6,7 @@ block styles
 	link(rel="stylesheet",href="/js/vendor/colorpicker/css/colorpicker.css",media="screen")
 	link(rel="stylesheet",href="/js/vendor/datepicker/css/datepicker.css",media="screen")
 	link(rel="stylesheet",href="/js/vendor/timepicker/bootstrap-timepicker.min.css",media="screen")
+	link(rel="stylesheet",href="/js/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css",media="screen")
 
 block sidebar
 	include ../layouts/sidebar
@@ -241,6 +242,47 @@ block content
 							span.add-on
 								i.icon-calendar
 
+	.row-fluid
+		.span12
+			form.form-horizontal(action='#')
+				legend Datetime Picker
+				.row-fluid
+					.span4.form-control-label
+						label(for='text') Default
+					.span8.form-controls
+						.datetimepicker.input-append.date
+							input(data-format="dd/MM/yyyy hh:mm:ss",type="text")
+							span.add-on
+								i(data-time-icon="icon-time",data-date-icon="icon-calendar")
+
+				.row-fluid
+					.span4.form-control-label
+						label(for='text') AM/PM Format
+					.span8.form-controls
+						.datetimepicker.datetimepicker-ampm.input-append
+							input(data-format="MM/dd/yyyy HH:mm:ss PP",type="text")
+							span.add-on
+								i(data-time-icon="icon-time",data-date-icon="icon-calendar")
+
+				.row-fluid
+					.span4.form-control-label
+						label(for='text') Only Datepicker
+					.span8.form-controls
+						.datetimepicker-onlydatepicker.input-append
+							input(data-format="MM/dd/yyyy HH:mm:ss PP",type="text")
+							span.add-on
+								i(data-time-icon="icon-time",data-date-icon="icon-calendar")
+
+				.row-fluid
+					.span4.form-control-label
+						label(for='text') Only Timepicker
+					.span8.form-controls
+						.datetimepicker-onlytimepicker.input-append
+							input(data-format="hh:mm:ss",type="text")
+							span.add-on
+								i(data-time-icon="icon-time",data-date-icon="icon-calendar")
+
+
 	h2 Knobs
 	.row-fluid
 		.span4.box
@@ -314,3 +356,4 @@ block scripts
 	script(src="/js/vendor/colorpicker/js/bootstrap-colorpicker.js")
 	script(src="/js/vendor/datepicker/js/bootstrap-datepicker.js")
 	script(src="/js/vendor/timepicker/bootstrap-timepicker.min.js")
+	script(src="/js/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js")

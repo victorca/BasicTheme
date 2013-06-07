@@ -123,4 +123,27 @@
 	if ($.fn.timepicker) {
 		$('.timepicker').timepicker();
 	}
+
+	/*
+	 * Datetimepickers.
+	 */
+	if ($.fn.datetimepicker) {
+		$('.datetimepicker')
+			.not('.datetimepicker-ampm')
+			.not('.datetimepicker-onlydatepicker')
+			.not('.datetimepicker-onlytimepicker')
+			.datetimepicker();
+
+		$('.datetimepicker-ampm').datetimepicker({
+			pick12HourFormat: true
+		});
+
+		$('.datetimepicker-onlydatepicker').datetimepicker({
+			pickTime: false
+		});
+
+		$('.datetimepicker-onlytimepicker').datetimepicker({
+			pickDate: false
+		});
+	}
 })(jQuery);
