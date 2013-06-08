@@ -54,7 +54,7 @@ block content
 
 	h2 Interactivity
 	.row-fluid
-		.span12.box
+		.span6.box
 			.box-header Toggling Series
 			.box-content
 				p Since all data is available client-side, it's pretty easy to make the plot interactive. Try turning countries on and off with the checkboxes next to the plot.
@@ -62,28 +62,31 @@ block content
 				p#choices
 				.chart-placeholder#chart-toggling(style="height:300px")
 
-	.row-fluid
 		.span6.box
-			.box-header Selection
+			.box-header Navigation
 			.box-content
+				p With the navigate plugin it is easy to add panning and zooming. Drag to pan, double click to zoom (or use the mouse scrollwheel).
+
+				p The plugin fires events (useful for synchronizing several plots) and adds a couple of public methods so you can easily build a little user interface around it, like the little buttons at the top right in the plot.
+				br
+				.chart-placeholder#chart-navigation(style="height:300px")
 
 	.row-fluid
 		.span6.box
 			.box-header Selection and zooming
 			.box-content
+				p Selection support makes it easy to construct flexible zooming schemes. With a few lines of code, the small overview plot to the right has been connected to the large plot. Try selecting a rectangle on either of them.
+				br
+				.chart-placeholder#chart-zooming(style="height:300px;float:left; width:400px;")
+				#overview.demo-placeholder(style="float:right;width:160px; height:125px;")
+				.clearfix
 
 		.span6.box
 			.box-header Interactivity
 			.box-content
-
-	.row-fluid
-		.span6.box
-			.box-header Navigation
-			.box-content
-
-		.span6.box
-			.box-header Resizing
-			.box-content
+				p One of the goals of Flot is to support user interactions. Try pointing and clicking on the points.
+				br
+				.chart-placeholder#chart-interactivity(style="height:300px")
 
 	h2 Additional Features
 	.row-fluid
@@ -95,26 +98,11 @@ block content
 				.chart-placeholder#chart-symbols(style="height:300px")
 
 		.span6.box
-			.box-header Time Axes
-			.box-content
-
-	.row-fluid
-		.span6.box
-			.box-header Visitors
-			.box-content
-
-		.span6.box
-			.box-header Time zones
-			.box-content
-
-	.row-fluid
-		.span6.box
 			.box-header Multiple axes
 			.box-content
-
-		.span6.box
-			.box-header Interacting with axes
-			.box-content
+				p As illustrated, you can put in multiple axes if you need to. For each data series, simply specify the axis number. In the options, you can then configure where you want the extra axes to appear.
+				br
+				.chart-placeholder#chart-multiple(style="height:300px")
 
 	.row-fluid
 		.span6.box
@@ -127,6 +115,21 @@ block content
 		.span6.box
 			.box-header Stacking
 			.box-content
+				p With the stack plugin, you can have Flot stack the series. This is useful if you wish to display both a total and the constituents it is made of. The only requirement is that you provide the input sorted on x.
+				br
+
+				.align-center
+					.stackControls.btn-group
+						button.btn With stacking
+						button.btn Without stacking
+
+					.graphControls.btn-group
+						button.btn Bars
+						button.btn Lines
+						button.btn Lines with steps
+
+				br
+				.chart-placeholder#chart-stacking(style="height:300px")
 
 	.row-fluid
 		.span6.box
@@ -139,6 +142,11 @@ block content
 		.span6.box
 			.box-header Tracking
 			.box-content
+				p You can add crosshairs that'll track the mouse position, either on both axes or as here on only one.
+
+				p If you combine it with listening on hover events, you can use it to track the intersection on the curves by interpolating the data points (look at the legend).
+				br
+				.chart-placeholder#chart-tracking(style="height:300px")
 
 	.row-fluid
 		.span6.box
@@ -158,9 +166,36 @@ block content
 				.chart-placeholder#chart-error(style="height:300px")
 
 	.row-fluid
-		.span6.box
+		.span8.box.offset2
 			.box-header Pie Charts
 			.box-content
+				h3#pie-title.align-center Default pie chart
+
+				.align-center
+					.pie-menu.btn-group
+						button#example-1.btn Default Options
+						button#example-2.btn Without Legend
+						button#example-3.btn Label Formatter
+						button#example-4.btn Label Radius
+						button#example-5.btn Label Styles #1
+						button#example-6.btn Label Styles #2
+
+					br
+					br
+					.pie-menu.btn-group
+						button#example-7.btn Hidden Labels
+						button#example-8.btn Combined Slice
+						button#example-9.btn Rectangular Pie
+						button#example-10.btn Tilted Pie
+						button#example-11.btn Donut Hole
+						button#example-12.btn Interactivity
+
+				br
+				br
+				.chart-placeholder#chart-pie(style="height:300px")
+				br
+				p#pie-description.align-center The default pie chart with no options set.
+
 
 block scripts
 	// [if lte IE 8]><script src="/js/vendor/jquery-flot/excanvas.min.js"></script><![endif]
@@ -171,3 +206,8 @@ block scripts
 	script(src="/js/vendor/jquery-flot/jquery.flot.errorbars.js")
 	script(src="/js/vendor/jquery-flot/jquery.flot.navigate.js")
 	script(src="/js/vendor/jquery-flot/jquery.flot.image.js")
+	script(src="/js/vendor/jquery-flot/jquery.flot.pie.js")
+	script(src="/js/vendor/jquery-flot/jquery.flot.crosshair.js")
+	script(src="/js/vendor/jquery-flot/jquery.flot.stack.js")
+	script(src="/js/vendor/jquery-flot/jquery.flot.time.js")
+	script(src="/js/vendor/jquery-flot/jquery.flot.selection.js")

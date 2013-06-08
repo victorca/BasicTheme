@@ -14,3 +14,20 @@
 #choices br {
 	display: none !important;
 }
+/* =Charts. Navigation.
+ -------------------------------------------------------------- */
+#chart-navigation .button {
+	position: absolute;
+	cursor: pointer;
+}
+
+#chart-navigation div.button {
+	font-size: smaller;
+	color: #999;
+	background-color: #eee;
+	padding: 2px;
+}
+.message {
+	padding-left: 50px;
+	font-size: smaller;
+}
