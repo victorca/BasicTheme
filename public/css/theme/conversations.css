@@ -6,7 +6,7 @@
 
 .conversation > li {
 	list-style-type : none;
-	margin-bottom   : 0.2em;
+	margin-bottom   : 1em;
 }
 
 .conversation > li:last-of-type {
@@ -48,31 +48,17 @@
 	float : right;
 }
 
+.conversation.chat-classic > li .body p {
+	margin-left : 4.5em;
+}
+
 .conversation.chat-classic > li.system .datetime,
 .conversation.chat-classic > li.system .body {
 	color : #939373;
 }
 
-.conversation.chat-classic > li.isuser + li.isuser .username,
-.conversation.chat-classic > li.notuser + li.notuser .username {
-	visibility : hidden;
-}
-
-.conversation.chat-classic > li.isuser + li.isuser .datetime,
-.conversation.chat-classic > li.notuser + li.notuser .datetime {
-	display : none;
-}
-
 /* =Conversations. Chat Boxed.
  -------------------------------------------------------------- */
-.conversation.chat-boxed > li {
-	margin-bottom : 0;
-}
-
-.conversation.chat-boxed > li.separator {
-	margin-bottom : 1em;
-}
-
 .conversation.chat-boxed > li .header .icon {
 	float          : left;
 	margin-right   : 0.5em;
@@ -100,37 +86,116 @@
 	font-style : italic;
 }
 
-.conversation.chat-boxed > li .header {
-	padding                 : 0.2em 0.5em 0.2em 0.2em;
-	background-image        : linear-gradient(to bottom, #ffffff, #e7ebef);
-	border                  : 1px solid #aaaaaa;
-	border-top-left-radius  : 4px;
-	border-top-right-radius : 4px;
+.conversation.chat-boxed > li.system {
+	border        : 1px solid #aaaaaa;
+	border-radius : 4px;
 }
 
-.conversation.chat-boxed > li .body {
-	padding-left     : 0.5em;
-	padding-top: 0.2em;
-	background-color : white;
-	border-style     : none solid none;
-	border-width     : 0 1px 1px;
-	border-color     : #aaaaaa;
+.conversation.chat-boxed > li.system .body {
+	border-radius : 4px;
+}
+
+.conversation.chat-boxed > li.system .datetime {
+	border-left                : 1px solid #aaaaaa;
+	border-top-right-radius    : 4px;
+	border-bottom-right-radius : 4px;
 }
 
 .conversation.chat-boxed > li.system .datetime,
 .conversation.chat-boxed > li.system .body {
-	border     : none;
-	color      : #939373;
-	margin-top : 0.5em;
+	color            : #939373;
+	padding          : 0.4em;
+	background-image : linear-gradient(to bottom, #ffffff, #e7ebef);
 }
 
-.conversation.chat-boxed > li.isuser + li.isuser .header,
-.conversation.chat-boxed > li.notuser + li.notuser .header {
-	display : none;
+/* =Conversations. Chat Bubbled.
+ -------------------------------------------------------------- */
+.conversation.chat-bubbled > li {
+	position: relative;
+}
+.conversation.chat-bubbled > li .clearfix {
+	height: 1.5em;
+}
+.conversation.chat-bubbled > li .icon {
+	float          : left;
+	margin-right   : 0.5em;
+	vertical-align : text-top;
 }
 
-/* TODO: See why this isnt working. Border to bottom each user chat block. */
-/* TODO: add box-shadow. */
-.conversation.chat-boxed > li.isuser:last-child .body {
-	border-bottom: 3px solid #aaaaaa;
+.conversation.chat-bubbled > li .username {
+	float : left;
+	width : 4.5em;
+}
+
+.conversation.chat-bubbled > li .message {
+	box-shadow    : 0 1px 8px 0 #b5b5b5;
+	border-radius : 8px;
+	font-size: inherit;
+	margin-left   : 5em;
+	padding       : 0.5em 1.5em;
+}
+
+.conversation.chat-bubbled > li.isuser .message {
+	background-image : linear-gradient(to bottom, #fcfcf3, #f8f7de);
+	border           : 1px solid #e7e391;
+}
+.conversation.chat-bubbled > li.isuser .message:before {
+	background: url("/images/backgrounds/yellow-arrow.png") no-repeat scroll 0 0 transparent;
+	content: "";
+	display: block;
+	height: 13px;
+	left: 4.15em;
+	position: absolute;
+	top: 0.5em;
+	width: 13px;
+}
+.conversation.chat-bubbled > li.notuser .message:before {
+	background: url("/images/backgrounds/green-arrow.png") no-repeat scroll 0 0 transparent;
+	content: "";
+	display: block;
+	height: 13px;
+	left: 4.15em;
+	position: absolute;
+	top: 0.5em;
+	width: 13px;
+}
+.conversation.chat-bubbled > li.notuser .message {
+	background-image : linear-gradient(to bottom, #fafdf4, #eef7da);
+	border           : 1px solid #bcda7d;
+}
+
+.conversation.chat-bubbled > li.notuser .username,
+.conversation.chat-bubbled > li.notuser .datetime {
+	color : #9ecf36;
+}
+
+.conversation.chat-bubbled > li.isuser .username,
+.conversation.chat-bubbled > li.isuser .datetime {
+	color : #e6c514;
+}
+
+.conversation.chat-bubbled > li .datetime {
+	float : right;
+}
+
+.conversation.chat-bubbled > li.system {
+	box-shadow    : 0 1px 8px 0 #b5b5b5;
+	border        : 1px solid #aaaaaa;
+	border-radius : 8px;
+}
+
+.conversation.chat-bubbled > li.system .body {
+	border-radius : 10px;
+}
+
+.conversation.chat-bubbled > li.system .datetime {
+	border-top-right-radius    : 10px;
+	border-bottom-right-radius : 10px;
+}
+
+.conversation.chat-bubbled > li.system .datetime,
+.conversation.chat-bubbled > li.system .body {
+	color            : #939373;
+	padding          : 0.4em;
+	background-image : linear-gradient(to bottom, #ffffff, #e7ebef);
 }

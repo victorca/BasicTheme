@@ -10,31 +10,21 @@ block content
 
 		.row-fluid
 			.span6.box
-				.box-header Chat Classic
+				.box-header Classic
 				.box-content
 					ul.conversation.chat-classic
 						li.isuser
 							.username Juliet:
 							.datetime 03:11:32 PM
-							.body O Romeo, Romeo, wherefore art thou Romeo?
-
-						li.isuser
-							.username Juliet:
-							.datetime 03:11:32 PM
-							.datetime
-							.body Deny thy father and refuse thy name;
-
-						li.isuser
-							.username Juliet:
-							.datetime 03:11:32 PM
-							.datetime
-							.body Or if thou wilt not, be but sworn my love
-
-						li.isuser
-							.username Juliet:
-							.datetime 03:11:32 PM
-							.datetime
-							.body And I'll no longer be a Capulet.
+							.body
+								p
+									| Romeo, Romeo, wherefore art thou Romeo?
+									br
+									| Deny thy father and refuse thy name;
+									br
+									| Or if thou wilt not, be but sworn my love
+									br
+									| And I'll no longer be a Capulet.
 
 						li.notuser
 							.username Romeo:
@@ -53,57 +43,36 @@ block content
 								button.span12.btn.btn-primary Send
 
 			.span6.box
-				.box-header Chat Boxed
+				.box-header Boxed
 				.box-content
 					ul.conversation.chat-boxed
-						li.isuser
-							.header
+						li.isuser.box
+							.header.box-header
 								.icon
 									img(src="/images/icons/famfamfam-silk-icons/icons/user_female.png")
 								.username Juliet
 								.datetime 03:11:32 PM
 								.clearfix
-							.body O Romeo, Romeo, wherefore art thou Romeo?
+							.body.box-content
+								p
+									| Romeo, Romeo, wherefore art thou Romeo?
+									br
+									| Deny thy father and refuse thy name;
+									br
+									| Or if thou wilt not, be but sworn my love
+									br
+									| And I'll no longer be a Capulet.
 
-						li.isuser
-							.header
-								.icon
-									img(src="/images/icons/famfamfam-silk-icons/icons/user_female.png")
-								.username Juliet
-								.datetime
-								.clearfix
-							.body Deny thy father and refuse thy name;
-
-						li.isuser
-							.header
-								.icon
-									img(src="/images/icons/famfamfam-silk-icons/icons/user_female.png")
-								.username Juliet
-								.datetime
-								.clearfix
-							.body Or if thou wilt not, be but sworn my love
-
-						li.isuser
-							.header
-								.icon
-									img(src="/images/icons/famfamfam-silk-icons/icons/user_female.png")
-								.username Juliet
-								.datetime
-								.clearfix
-							.body And I'll no longer be a Capulet.
-
-						li.separator
-
-						li.notuser
-							.header
+						li.notuser.box
+							.header.box-header
 								.icon
 									img(src="/images/icons/famfamfam-silk-icons/icons/user.png")
 								.username Romeo
 								.datetime 03:11:32 PM
 								.clearfix
-							.body Shall I hear more, or shall I speak at this?
+							.body.box-content Shall I hear more, or shall I speak at this?
 
-						li.system
+						li.system.box
 							.datetime 03:12:00 PM
 							.body - Juliet has disconnected
 
@@ -116,8 +85,53 @@ block content
 
 		.row-fluid
 			.span6.box
-				.box-header Style 3
+				.box-header Bubbles
 				.box-content
+					ul.conversation.chat-bubbled
+						li.isuser
+							.icon
+								img(src="/images/icons/person.svg")
+
+							.message
+								.header
+									.username Juliet
+									.datetime 03:11:32 PM
+									.clearfix
+								.body
+									p
+										| Romeo, Romeo, wherefore art thou Romeo?
+										br
+										| Deny thy father and refuse thy name;
+										br
+										| Or if thou wilt not, be but sworn my love
+										br
+										| And I'll no longer be a Capulet.
+
+						li.separator
+
+						li.notuser
+							.icon
+								img(src="/images/icons/person.svg")
+
+							.message
+								.header
+									.username Romeo
+									.datetime 03:11:32 PM
+									.clearfix
+								.body Shall I hear more, or shall I speak at this?
+
+						li.separator
+
+						li.system
+							.datetime 03:12:00 PM
+							.body - Juliet has disconnected
+
+						.conversation-actionbar
+							.row-fluid
+								.span10
+									input.span12(type="text",placeholder="Type your message here...")
+								.span2
+									button.span12.btn.btn-primary Send
 
 			.span6.box
 				.box-header Style 4
