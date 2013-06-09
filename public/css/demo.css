@@ -50,3 +50,22 @@
 .fugue-icons li:hover {
 	background-color: #FBF4F4;
 }
+/* =Icons. Famfamfam.
+ -------------------------------------------------------------- */
+.famfam-icons li {
+	border-radius: 6px 6px 6px 6px !important;
+	cursor: pointer;
+	height: 32px;
+	float: left;
+	line-height: 32px;
+	list-style-type: none;
+	padding-left: 12px;
+	width: 20em;
+}
+.famfam-icons li img {
+	margin-right: 2em;
+}
+
+.famfam-icons li:hover {
+	background-color: #FBF4F4;
+}
