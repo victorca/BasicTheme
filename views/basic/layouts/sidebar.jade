@@ -186,3 +186,17 @@ ul.nav.nav-tabs.nav-stacked
 					.accordion-inner
 						i.icon-th
 						| Gallery
+
+	li(class=(page == 'basic/widgets/conversations' ?'active':''))
+		.accordion-group.border-radius-none.margin-bottom-none
+			.accordion-heading
+				a.accordion-toggle(data-toggle="collapse",href="#widgets")
+					i.icon-picture
+					| Widgets
+					i.accordion-level.icon-chevron-right.pull-right
+
+			#widgets.accordion-body.collapse(class=(page == 'basic/widgets/conversations' ?'in':''))
+				a.border-radius-none(href="/basic/widgets/conversations",class=(page == 'basic/widgets/conversations' ?'active':''))
+					.accordion-inner
+						i.icon-th-large
+						| Conversations
