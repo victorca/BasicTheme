@@ -1,71 +1,106 @@
 /* =Charts.
  -------------------------------------------------------------- */
 #choices {
-	text-align: center;
+	text-align : center;
 }
+
 #choices input {
-	margin-top: 0;
+	margin-top : 0;
 }
+
 #choices label {
-	display: inline-block;
-	margin-left: 0.5em;
-	margin-right: 1.5em;
+	display      : inline-block;
+	margin-left  : 0.5em;
+	margin-right : 1.5em;
 }
+
 #choices br {
-	display: none !important;
+	display : none !important;
 }
+
 /* =Charts. Navigation.
  -------------------------------------------------------------- */
 #chart-navigation .button {
-	position: absolute;
-	cursor: pointer;
+	position : absolute;
+	cursor   : pointer;
 }
 
 #chart-navigation div.button {
-	font-size: smaller;
-	color: #999;
-	background-color: #eee;
-	padding: 2px;
+	font-size        : smaller;
+	color            : #999999;
+	background-color : #eeeeee;
+	padding          : 2px;
 }
+
 .message {
-	padding-left: 50px;
-	font-size: smaller;
+	padding-left : 50px;
+	font-size    : smaller;
 }
+
 /* =Icons. Fugue.
  -------------------------------------------------------------- */
 .fugue-icons li {
-	border-radius: 6px 6px 6px 6px !important;
-	cursor: pointer;
-	height: 32px;
-	float: left;
-	line-height: 32px;
-	list-style-type: none;
-	padding-left: 12px;
-	width: 20em;
+	border-radius   : 6px 6px 6px 6px !important;
+	cursor          : pointer;
+	height          : 32px;
+	float           : left;
+	line-height     : 32px;
+	list-style-type : none;
+	padding-left    : 12px;
+	width           : 20em;
 }
+
 .fugue-icons li img {
-	margin-right: 2em;
+	margin-right : 2em;
 }
 
 .fugue-icons li:hover {
-	background-color: #FBF4F4;
+	background-color : #fbf4f4;
 }
+
 /* =Icons. Famfamfam.
  -------------------------------------------------------------- */
 .famfam-icons li {
-	border-radius: 6px 6px 6px 6px !important;
-	cursor: pointer;
-	height: 32px;
-	float: left;
-	line-height: 32px;
-	list-style-type: none;
-	padding-left: 12px;
-	width: 20em;
+	border-radius   : 6px 6px 6px 6px !important;
+	cursor          : pointer;
+	height          : 32px;
+	float           : left;
+	line-height     : 32px;
+	list-style-type : none;
+	padding-left    : 12px;
+	width           : 20em;
 }
+
 .famfam-icons li img {
-	margin-right: 2em;
+	margin-right : 2em;
 }
 
 .famfam-icons li:hover {
-	background-color: #FBF4F4;
+	background-color : #fbf4f4;
+}
+
+/* =Icons. Icomoon.
+ -------------------------------------------------------------- */
+.icomoon-icons li {
+	border-radius   : 6px 6px 6px 6px !important;
+	cursor          : pointer;
+	height          : 32px;
+	float           : left;
+	line-height     : 32px;
+	list-style-type : none;
+	padding-left    : 12px;
+	width           : 20em;
+}
+
+.icomoon-icons li img {
+	margin-right : 2em;
+}
+
+.icomoon-icons li:hover {
+	background-color : #fbf4f4;
+}
+
+.icomoon-icons li:hover img {
+	margin-left : -0.5em;
+	margin-right: 1.2em;
 }

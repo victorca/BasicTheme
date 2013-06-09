@@ -2904,4 +2904,16 @@ clock();
 	 Add support for popovers
 	 */
 	$(".cf-popover").popover();
+
+	/**
+	 * Icons.
+	 */
+	$('.icomoon-icons li').on('mouseenter', function () {
+		var img$ = $(this).find('img');
+		img$.attr('src', img$.attr('src').replace('16px', '32px'));
+	});
+	$('.icomoon-icons li').on('mouseleave', function () {
+		var img$ = $(this).find('img');
+		img$.attr('src', img$.attr('src').replace('32', '16'));
+	});
 })(jQuery);
