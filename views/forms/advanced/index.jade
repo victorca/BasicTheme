@@ -282,6 +282,39 @@ block content
 							span.add-on
 								i(data-time-icon="icon-time",data-date-icon="icon-calendar")
 
+	h2 Star ratings
+	.row-fluid
+		.span4.box
+			.box-header Default
+			.box-content
+				.star-rating
+
+		.span4.box
+			.box-header Score
+			.box-content
+				.star-rating(data-score="3")
+
+		.span4.box
+			.box-header Number
+			.box-content
+				.star-rating(data-score="6",data-number="10")
+
+	.row-fluid
+		.span4.box
+			.box-header Read Only
+			.box-content
+				.star-rating(data-score="3",data-readonly="true")
+
+		.span4.box
+			.box-header Half
+			.box-content
+				.star-rating(data-score="2.5",data-half="true")
+
+		.span4.box
+			.box-header Cancel
+			.box-content
+				.star-rating(data-cancel="true")
+
 	h2 Knobs
 	.row-fluid
 		.span4.box
@@ -356,3 +389,4 @@ block scripts
 	script(src="/js/vendor/datepicker/js/bootstrap-datepicker.js")
 	script(src="/js/vendor/timepicker/bootstrap-timepicker.min.js")
 	script(src="/js/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js")
+	script(src="/js/vendor/raty/jquery.raty.min.js")

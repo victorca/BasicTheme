@@ -8,20 +8,9 @@ Advanced Elements
 Forms
 ============================
 
-* Basic Elements
-	+ 	Input Fields
-	+ 	Textarea
-	+ B/	Checkboxes
-	+ B/	Radiobuttons
-	+ B/	Buttons
-	+ 	Select
-
 * Advanced Elements
 	+ 	Sliders
-	+ B/	Progress Bars
 	+ 	Spinner
-	+ 	Datetimepicker
-	+ 	Colorpicker
 	+ 	Rich Text Editors (WYSIWYG)
 
 * Wizards

@@ -146,4 +146,28 @@
 			pickDate: false
 		});
 	}
+
+	/*
+	 * Star Ratings.
+	 */
+	if ($.fn.raty) {
+		$('.star-rating').raty({
+			path    : '/js/vendor/raty/img',
+			number  : function () {
+				return $(this).attr('data-number') || 5;
+			},
+			score   : function () {
+				return $(this).attr('data-score') || 0;
+			},
+			readOnly: function () {
+				return $(this).attr('data-readonly') || false;
+			},
+			half    : function () {
+				return $(this).attr('data-half') || false;
+			},
+			cancel  : function () {
+				return $(this).attr('data-cancel') || false;
+			}
+		});
+	}
 })(jQuery);
