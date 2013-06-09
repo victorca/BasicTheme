@@ -107,8 +107,6 @@ block content
 										br
 										| And I'll no longer be a Capulet.
 
-						li.separator
-
 						li.notuser
 							.icon
 								img(src="/images/icons/person.svg")
@@ -119,8 +117,6 @@ block content
 									.datetime 03:11:32 PM
 									.clearfix
 								.body Shall I hear more, or shall I speak at this?
-
-						li.separator
 
 						li.system
 							.datetime 03:12:00 PM
@@ -134,6 +130,46 @@ block content
 									button.span12.btn.btn-primary Send
 
 			.span6.box
-				.box-header Style 4
+				.box-header Interleaved Bubbles
 				.box-content
+					ul.conversation.chat-bubbled.chat-interleaved
+						li.isuser
+							.icon
+								img(src="/images/icons/person.svg")
 
+							.message
+								.header
+									.username Juliet
+									.datetime 03:11:32 PM
+									.clearfix
+								.body
+									p
+										| Romeo, Romeo, wherefore art thou Romeo?
+										br
+										| Deny thy father and refuse thy name;
+										br
+										| Or if thou wilt not, be but sworn my love
+										br
+										| And I'll no longer be a Capulet.
+
+						li.notuser
+							.icon
+								img(src="/images/icons/person.svg")
+
+							.message
+								.header
+									.username Romeo
+									.datetime 03:11:32 PM
+									.clearfix
+								.body Shall I hear more, or shall I speak at this?
+
+						li.system
+							.datetime 03:12:00 PM
+							.body - Juliet has disconnected
+
+						.conversation-actionbar
+							.row-fluid
+								.span10
+									input.span12(type="text",placeholder="Type your message here...")
+								.span2
+									button.span12.btn.btn-primary Send

@@ -199,3 +199,28 @@
 	padding          : 0.4em;
 	background-image : linear-gradient(to bottom, #ffffff, #e7ebef);
 }
+
+/* =Conversations. Chat Bubbled. Interleaved
+ -------------------------------------------------------------- */
+.conversation.chat-bubbled.chat-interleaved > li:nth-child(2n) .icon {
+	float          : right;
+	margin-left   : 0.5em;
+	margin-right   : 0.5em;
+	vertical-align : text-top;
+}
+.conversation.chat-bubbled.chat-interleaved > li:nth-child(2n) .message {
+	margin-right   : 5em;
+	margin-left: 0;
+}
+.conversation.chat-bubbled.chat-interleaved > li:nth-child(2n).notuser .message:before {
+	background: url("/images/backgrounds/green-arrow-inverted.png") no-repeat scroll 0 0 transparent;
+	right: 4.15em;
+	left: auto;
+	top: 0.5em;
+}
+.conversation.chat-bubbled.chat-interleaved > li:nth-child(2n).isuser .message:before {
+	background: url("/images/backgrounds/yellow-arrow-inverted.png") no-repeat scroll 0 0 transparent;
+	right: 4.15em;
+	left: auto;
+	top: 0.5em;
+}
