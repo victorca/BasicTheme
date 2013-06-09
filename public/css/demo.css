@@ -31,3 +31,22 @@
 	padding-left: 50px;
 	font-size: smaller;
 }
+/* =Icons. Fugue.
+ -------------------------------------------------------------- */
+.fugue-icons li {
+	border-radius: 6px 6px 6px 6px !important;
+	cursor: pointer;
+	height: 32px;
+	float: left;
+	line-height: 32px;
+	list-style-type: none;
+	padding-left: 12px;
+	width: 20em;
+}
+.fugue-icons li img {
+	margin-right: 2em;
+}
+
+.fugue-icons li:hover {
+	background-color: #FBF4F4;
+}
