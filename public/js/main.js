@@ -170,4 +170,33 @@
 			}
 		});
 	}
+
+	/**
+	 * Boxes utilities.
+	 * Minimize & Maximize Box button.
+	 */
+	$('.box .control-drop').on('click', function () {
+		var box$ = $(this).closest('.box'),
+			box_content$ = box$.find('.box-content');
+
+		if ($(this).hasClass('icon-chevron-up')) {
+			$(this).removeClass('icon-chevron-up').addClass('icon-chevron-down');
+
+			box$.removeClass('box-unfolded').addClass('box-folded');
+			box_content$.slideUp(200);
+		}
+		else {
+			$(this).removeClass('icon-chevron-down').addClass('icon-chevron-up');
+
+			box$.removeClass('box-folded').addClass('box-unfolded');
+			box_content$.slideDown(200);
+		}
+	});
+
+	/**
+	 * Remove Box button.
+	 */
+	$('.box .control-remove').on('click', function () {
+		$(this).closest('.box').remove();
+	});
 })(jQuery);

@@ -59,6 +59,9 @@
 
 /* =Conversations. Chat Boxed.
  -------------------------------------------------------------- */
+.conversation.chat-boxed > li .header {
+	padding: 0.4em;
+}
 .conversation.chat-boxed > li .header .icon {
 	float          : left;
 	margin-right   : 0.5em;
