@@ -71,8 +71,9 @@
 	opacity : 0.6;
 }
 
-.box .box-header .actions i + i {
-	margin-left: 1em;
+.box .box-header .actions i + i,
+.box .box-header .actions div + i {
+	margin-left : 1em;
 }
 
 .box .box-header .actions i:hover {

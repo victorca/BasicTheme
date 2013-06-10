@@ -199,4 +199,11 @@
 	$('.box .control-remove').on('click', function () {
 		$(this).closest('.box').remove();
 	});
+
+	/**
+	 * Tooltips.
+	 */
+	if ($.fn.tooltip) {
+		$('.tip').tooltip();
+	}
 })(jQuery);

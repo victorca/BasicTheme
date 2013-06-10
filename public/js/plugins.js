@@ -2895,12 +2895,6 @@ clock();
  */
 (function ($) {
 	/*
-	 Add support for tooltips
-	 */
-	$(".tip").tooltip();
-
-
-	/*
 	 Add support for popovers
 	 */
 	$(".cf-popover").popover();
