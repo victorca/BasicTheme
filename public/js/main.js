@@ -206,4 +206,15 @@
 	if ($.fn.tooltip) {
 		$('.tip').tooltip();
 	}
+
+	/**
+	 * Chosen.
+	 */
+	if ($.fn.chosen) {
+		$('.chzn-select').not('.chzn-select-deselect').chosen();
+
+		$('.chzn-select-deselect').chosen({
+			allow_single_deselect: true
+		});
+	}
 })(jQuery);
