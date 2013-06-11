@@ -134,6 +134,12 @@ block content
 					.form-controls.span8
 						textarea#textareap.span12(placeholder="Textarea field placeholder...",name="textarea")
 
+				.row-fluid
+					.span4.form-control-label
+						label(for='textareap') Autogrowing textarea
+					.form-controls.span8
+						textarea.autosize.span12(placeholder="Textarea field placeholder...",name="textarea")
+
 	.row-fluid
 		.span6
 			form.form-horizontal(action='#')
@@ -1233,3 +1239,4 @@ block content
 block scripts
 	script(src="/js/vendor/pixelmatrix-uniform/jquery.uniform.min.js")
 	script(src="/js/vendor/chosen/chosen.jquery.min.js")
+	script(src="/js/vendor/jquery.autosize-min.js")

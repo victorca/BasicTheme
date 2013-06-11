@@ -265,4 +265,13 @@
 			this$.slimscroll(options);
 		});
 	}
+
+	/**
+	 * Autogrowing textarea.
+	 */
+	if ($.fn.autosize) {
+		$('.autosize').autosize({
+			append: '\n'
+		});
+	}
 })(jQuery);

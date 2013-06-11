@@ -192,3 +192,10 @@ form  input[type="radio"], form input[type="checkbox"] {
 }
 
 /*TODO: fix the on hover background position issue with uniform radios */
+/* =Forms. Textarea. Autosize
+ -------------------------------------------------------------- */
+.autosize {
+	-webkit-transition: height 0.2s;
+	-moz-transition: height 0.2s;
+	transition: height 0.2s;
+}
