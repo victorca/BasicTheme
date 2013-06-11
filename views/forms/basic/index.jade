@@ -3,6 +3,7 @@ extends ../../layouts/layout
 block styles
 	link(rel="stylesheet",href="/js/vendor/pixelmatrix-uniform/themes/default/css/uniform.default.min.css",media="screen")
 	link(rel="stylesheet",href="/js/vendor/chosen/chosen.css",media="screen")
+	link(rel="stylesheet",href="/js/vendor/iCheckbox/css/iCheckbox.css",media="screen")
 
 block sidebar
 	include ../layouts/sidebar
@@ -1006,6 +1007,71 @@ block content
 	.row-fluid
 		.span6
 			form.form-horizontal(action='#')
+				legend Slick Checkboxes
+				.row-fluid
+					.span4.form-control-label
+						label(for='radio1') Checkboxes
+					.form-controls.span8
+						label.checkbox.inline
+							input.iCheckbox-slick(name="optionsCheckboxes1",value="option1",type="checkbox")
+							|Option 1
+						label.checkbox.inline
+							input.iCheckbox-slick(name="optionsCheckboxes2",value="option1",type="checkbox", checked="checked")
+							|Option 2
+						label.checkbox.inline
+							input.iCheckbox-slick(name="optionsCheckboxes3",value="option2",type="checkbox")
+							|Option 3
+
+				.row-fluid
+					.span4.form-control-label
+						label(for='radio1') Checkboxes
+					.form-controls.span8
+						label.checkbox
+							input.iCheckbox-slick(name="optionsCheckboxes1",value="option1",type="checkbox")
+							|Option 1
+						label.checkbox
+							input.iCheckbox-slick(name="optionsCheckboxes2",value="option1",type="checkbox", checked="checked")
+							|Option 2
+
+						label.checkbox
+							input.iCheckbox-slick(name="optionsCheckboxes3",value="option2",type="checkbox")
+							|Option 3
+
+		.span6
+			form.form-horizontal(action='#')
+				legend iPhone Checkboxes
+				.row-fluid
+					.span4.form-control-label
+						label(for='radio1') Checkboxes
+					.form-controls.span8
+						label.checkbox.inline
+							input.iCheckbox-iPhone(name="optionsCheckboxes1",value="option1",type="checkbox")
+							|Option 1
+						label.checkbox.inline
+							input.iCheckbox-iPhone(name="optionsCheckboxes2",value="option1",type="checkbox", checked="checked")
+							|Option 2
+						label.checkbox.inline
+							input.iCheckbox-iPhone(name="optionsCheckboxes3",value="option2",type="checkbox")
+							|Option 3
+
+				.row-fluid
+					.span4.form-control-label
+						label(for='radio1') Checkboxes
+					.form-controls.span8
+						label.checkbox
+							input.iCheckbox-iPhone(name="optionsCheckboxes1",value="option1",type="checkbox")
+							|Option 1
+						label.checkbox
+							input.iCheckbox-iPhone(name="optionsCheckboxes2",value="option1",type="checkbox", checked="checked")
+							|Option 2
+
+						label.checkbox
+							input.iCheckbox-iPhone(name="optionsCheckboxes3",value="option2",type="checkbox")
+							|Option 3
+
+	.row-fluid
+		.span6
+			form.form-horizontal(action='#')
 				legend Native File input
 				.row-fluid
 					.span4.form-control-label
@@ -1240,3 +1306,4 @@ block scripts
 	script(src="/js/vendor/pixelmatrix-uniform/jquery.uniform.min.js")
 	script(src="/js/vendor/chosen/chosen.jquery.min.js")
 	script(src="/js/vendor/jquery.autosize-min.js")
+	script(src="/js/vendor/iCheckbox/jquery.iCheckbox.js")

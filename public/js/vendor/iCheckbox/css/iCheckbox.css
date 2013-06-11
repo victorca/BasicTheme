@@ -1,0 +1,32 @@
+.slickCheckbox-switcher-container {
+	display: inline-block;
+	height:15px;
+	width:28px;
+	margin-right: 0.5em;
+	position: relative;
+	vertical-align: top;
+}
+.slickCheckbox-switch {
+	cursor: pointer;
+	height:15px;
+	width:28px;
+	background-image:url('../images/switch.png');
+	background-repeat:none;
+	background-position:0px;
+}
+.iCheckbox-switcher-container {
+	display: inline-block;
+	height:27px;
+	width:94px;
+	margin-right: 0.5em;
+	position: relative;
+	vertical-align: top;
+}
+.iCheckbox-switch {
+	cursor: pointer;
+	height:27px;
+	width:94px;
+	background-image:url('../images/iphone_switch.png');
+	background-repeat:none;
+	background-position:0px;
+}

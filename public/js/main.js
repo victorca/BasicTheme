@@ -274,4 +274,26 @@
 			append: '\n'
 		});
 	}
+
+	/**
+	 * Slick & iPhone checkboxes.
+	 */
+	if ($.fn.iCheckbox) {
+		$('.iCheckbox-slick').iCheckbox({
+			switch_container_src: '/js/vendor/iCheckbox/images/switch-frame.png',
+			class_container: 'slickCheckbox-switcher-container',
+			class_switch: 'slickCheckbox-switch',
+			class_checkbox: 'iCheckbox',
+			switch_speed: 100,
+			switch_swing: -13
+		});
+
+		$('.iCheckbox-iPhone').iCheckbox({
+			switch_container_src: '/js/vendor/iCheckbox/images/iphone_switch_container.gif',
+			class_container: 'iCheckbox-switcher-container',
+			class_switch: 'iCheckbox-switch',
+			class_checkbox: 'iCheckbox',
+			switch_speed: 100
+		});
+	}
 })(jQuery);
