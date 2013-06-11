@@ -217,4 +217,52 @@
 			allow_single_deselect: true
 		});
 	}
+
+	/**
+	 * Slick Scrools.
+	 */
+	if ($.fn.slimscroll) {
+		$('.slickscroll').each(function () {
+			var this$ = $(this),
+				options = {};
+
+			if (this$.attr('data-height')) {
+				options.height = this$.attr('data-height');
+			}
+			if (this$.attr('data-width')) {
+				options.width = this$.attr('data-width');
+			}
+			if (this$.attr('data-size')) {
+				options.size = this$.attr('data-size');
+			}
+			if (this$.attr('data-position')) {
+				options.position = this$.attr('data-position');
+			}
+			if (this$.attr('data-color')) {
+				options.color = this$.attr('data-color');
+			}
+			if (this$.attr('data-alwaysvisible') == 'true' || this$.attr('data-alwaysvisible') == 'TRUE') {
+				options.alwaysVisible = this$.attr('data-alwaysvisible');
+			}
+			if (this$.attr('data-distance')) {
+				options.distance = this$.attr('data-distance');
+			}
+			if (this$.attr('data-opacity')) {
+				options.opacity = this$.attr('data-opacity');
+			}
+			if (this$.attr('data-railvisible') == 'true' || this$.attr('data-railvisible') == 'TRUE') {
+				options.railVisible = this$.attr('data-railvisible');
+			}
+			if (this$.attr('data-railcolor')) {
+				options.railColor = this$.attr('data-railcolor');
+			}
+			if (this$.attr('data-railopacity')) {
+				options.railOpacity = this$.attr('data-railopacity');
+			}
+			if (this$.attr('data-wheelstep')) {
+				options.wheelStep = this$.attr('data-wheelstep');
+			}
+			this$.slimscroll(options);
+		});
+	}
 })(jQuery);
