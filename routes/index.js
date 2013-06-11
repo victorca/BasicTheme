@@ -46,4 +46,6 @@ module.exports = function (app) {
 	 Standalone Templates.
 	 */
 	app.get('/templates', require('./templates/index.js').index);
+	app.get('/templates/calendar/full', require('./templates/calendar.js').full);
+	app.get('/templates/calendar/boxed', require('./templates/calendar.js').boxed);
 };

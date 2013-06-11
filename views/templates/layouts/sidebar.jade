@@ -23,6 +23,25 @@ ul.nav.nav-tabs.nav-stacked
 			i.icon-dashboard
 			| Dashboard
 
+	li(class=(page == 'templates/calendar/full' || page == 'templates/calendar/boxed' ?'active':''))
+		div.accordion-group.border-radius-none.margin-bottom-none
+			div.accordion-heading
+				a.accordion-toggle(data-toggle="collapse",href="#calendar")
+					i.icon-calendar
+					| Calendar
+					i.accordion-level.icon-chevron-right.pull-right
+
+			#calendar.accordion-body.collapse(class=(page == 'templates/calendar/full' || page == 'templates/calendar/boxed' ?'in':''))
+				a.border-radius-none(href="/templates/calendar/full",class=(page == 'templates/calendar/full' ?'active':''))
+					.accordion-inner
+						i.icon-calendar
+						| Full Page
+
+				a.border-radius-none(href="/templates/calendar/boxed",class=(page == 'templates/calendar/boxed' ?'active':''))
+					.accordion-inner
+						i.icon-calendar
+						| Boxed
+
 	li
 		a.border-radius-none(href="/templates/profile")
 			i.icon-home

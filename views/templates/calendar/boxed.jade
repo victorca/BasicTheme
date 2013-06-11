@@ -1,0 +1,56 @@
+extends ../../layouts/layout
+
+block styles
+	link(rel="stylesheet",href="/js/vendor/fullcalendar/fullcalendar.css",media="screen")
+	link(rel="stylesheet",href="/js/vendor/fullcalendar/fullcalendar.print.css",media="print")
+
+block sidebar
+	include ../layouts/sidebar
+
+block content
+	h2.border-bottom-double Page Title
+		br
+		span.description Page description goes here.
+
+	.row-fluid
+		.span12.box
+			.box-header
+				.actions
+					i.control-drop.icon-chevron-up.tip(title="Minimize / Maximize Box", data-toggle="tooltip")
+					i.control-remove.icon-remove.tip(title="Remove Box", data-toggle="tooltip")
+				h3 Calendar
+			.box-content
+				.row-fluid
+					.span2
+						h4.align-center Draggable Events
+						.well#external-events
+							ul
+								li
+									.external-event.label.label-inverse(data-priority="inverse") Other Event
+								li
+									.external-event.label Default Event
+								li
+									.external-event.label.label-success(data-priority="success") Normal Event
+								li
+									.external-event.label.label-info(data-priority="info") Info Event
+								li
+									.external-event.label.label-warning(data-priority="warning") Warning Event
+								li
+									.external-event.label.label-important(data-priority="important") Important Event
+							p
+								label
+									input#drop-remove(type='checkbox')
+									| Remove after drop
+					.span10
+						.calendar
+
+
+block scripts
+	script(src="/js/vendor/jquery-ui/js/jquery.ui.core.min.js")
+	script(src="/js/vendor/jquery-ui/js/jquery.ui.widget.min.js")
+	script(src="/js/vendor/jquery-ui/js/jquery.ui.mouse.min.js")
+	script(src="/js/vendor/jquery-ui/js/jquery.ui.draggable.min.js")
+	script(src="/js/vendor/jquery-ui/js/jquery.ui.resizable.min.js")
+
+	script(src="/js/vendor/fullcalendar/fullcalendar.min.js")
+	script(src="/js/calendar.js")

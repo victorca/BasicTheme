@@ -1,0 +1,22 @@
+/* =Calendar.
+ -------------------------------------------------------------- */
+#external-events ul {
+	margin-left: 0;
+}
+#external-events ul > li {
+	list-style-type: none;
+	margin-bottom: 0.5em;
+}
+#external-events ul > li .label {
+	width: 100%;
+}
+#external-events p label {
+	margin-bottom: 0;
+}
+#external-events #drop-remove {
+	margin-top: 0;
+	margin-right: 0.5em;
+}
+#external-events .external-event {
+	cursor: pointer;
+}
