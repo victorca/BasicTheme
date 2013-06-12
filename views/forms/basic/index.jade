@@ -66,6 +66,12 @@ block content
 					.form-controls.span8
 						input#icons(type="text")
 
+				.row-fluid
+					.span4.form-control-label
+						label(for='placeholder') Spinner
+					.form-controls.span8
+						input#placeholder.spinner.input-mini(type="text",value="5")
+
 				.row-fluid.warning
 					.span4.form-control-label
 						label Input with warning
@@ -1313,3 +1319,9 @@ block scripts
 	script(src="/js/vendor/chosen/chosen.jquery.min.js")
 	script(src="/js/vendor/jquery.autosize-min.js")
 	script(src="/js/vendor/iCheckbox/jquery.iCheckbox.js")
+	script(src="/js/vendor/jquery.mousewheel.js")
+
+	script(src="/js/vendor/jquery-ui/js/jquery.ui.core.min.js")
+	script(src="/js/vendor/jquery-ui/js/jquery.ui.widget.min.js")
+	script(src="/js/vendor/jquery-ui/js/jquery.ui.button.min.js")
+	script(src="/js/vendor/jquery-ui/js/jquery.ui.spinner.min.js")

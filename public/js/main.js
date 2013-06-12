@@ -296,4 +296,11 @@
 			switch_speed: 100
 		});
 	}
+
+	/**
+	 * Spinners.
+	 */
+	if ($.fn.spinner) {
+		$('.spinner').spinner();
+	}
 })(jQuery);
