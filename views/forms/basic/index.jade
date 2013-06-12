@@ -54,6 +54,12 @@ block content
 
 				.row-fluid
 					.span4.form-control-label
+						label(for='placeholder') Tooltip
+					.form-controls.span8
+						input#placeholder.span12(type="text",placeholder="Hover to see tooltip...", title="Some help here").tip
+
+				.row-fluid
+					.span4.form-control-label
 						label(for='icons')
 							i.icon-picture.field-icon
 							| Icons
