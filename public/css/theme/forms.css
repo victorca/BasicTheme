@@ -195,7 +195,76 @@ form  input[type="radio"], form input[type="checkbox"] {
 /* =Forms. Textarea. Autosize
  -------------------------------------------------------------- */
 .autosize {
-	-webkit-transition: height 0.2s;
-	-moz-transition: height 0.2s;
-	transition: height 0.2s;
+	-webkit-transition : height 0.2s;
+	-moz-transition    : height 0.2s;
+	transition         : height 0.2s;
+}
+
+/* =Forms. Spinner.
+ -------------------------------------------------------------- */
+.ui-spinner a {
+	height     : 14px;
+	position   : absolute;
+	background : none;
+	border     : none;
+	width      : 18px;
+	padding    : 0;
+	background : url('/js/vendor/jquery-ui/images/spinner_arrows.gif') no-repeat 0 -100px;
+	cursor     : pointer;
+}
+
+.ui-spinner .ui-spinner-up {
+	top                 : 0;
+	right               : 0;
+	background-position : 0 0;
+}
+
+.ui-spinner .ui-spinner-down {
+	top                 : 14px;
+	right               : 0;
+	background-position : 0 -14px;
+}
+
+.ui-spinner .ui-spinner-up:hover {
+	background-position : -18px 0;
+}
+
+.ui-spinner .ui-spinner-down:hover {
+	background-position : -18px -14px;
+}
+
+.ui-spinner input,
+.ui-spinner input:focus {
+	margin-top         : -1px;
+	display            : block !important;
+	-webkit-box-shadow : none !important;
+	-moz-box-shadow    : none !important;
+	-ms-box-shadow     : none !important;
+	box-shadow         : none !important;
+	outline            : none !important;
+}
+
+.ui-spinner {
+	-webkit-box-shadow    : inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow       : inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow            : inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	position              : relative;
+	display: inline-block;
+	font-size             : 13px;
+	height                : 28px;
+	line-height           : 28px;
+	color                 : #555555;
+	background-color      : #ffffff;
+	/*border                : 1px solid #cccccc;*/
+	-webkit-border-radius : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+}
+
+.ui-spinner .ui-spinner-box {
+	background : none;
+	border     : none !important;
+}
+.ui-spinner .ui-icon {
+	display: none;
 }
