@@ -132,6 +132,78 @@ block content
 						button.btn.btn-danger(type="button") Cancel
 
 			form.form-horizontal(action='#')
+				legend Masked fields
+				.row-fluid
+					.span4.form-control-label
+						label Date
+					.form-controls.span8
+						input.mask-date(type="text")
+						span.help-inline.description 99/99/9999
+
+				.row-fluid
+					.span4.form-control-label
+						label Date 2
+					.form-controls.span8
+						input.mask-date-2(type="text")
+						span.help-inline.description 9999/99/99
+
+				.row-fluid
+					.span4.form-control-label
+						label Phone
+					.form-controls.span8
+						input.mask-phone(type="text")
+						span.help-inline.description (999) 999-9999
+
+				.row-fluid
+					.span4.form-control-label
+						label Phone + Ext
+					.form-controls.span8
+						input.mask-phone-ext(type="text")
+						span.help-inline.description (999) 999-9999? x99999
+
+				.row-fluid
+					.span4.form-control-label
+						label International Phone
+					.form-controls.span8
+						input.mask-phone-int(type="text")
+						span.help-inline.description +33 999 999 999
+
+				.row-fluid
+					.span4.form-control-label
+						label Tax ID
+					.form-controls.span8
+						input.mask-tax(type="text")
+						span.help-inline.description 99-9999999
+
+				.row-fluid
+					.span4.form-control-label
+						label SSN
+					.form-controls.span8
+						input.mask-ssn(type="text")
+						span.help-inline.description 999-99-9999
+
+				.row-fluid
+					.span4.form-control-label
+						label Product Key
+					.form-controls.span8
+						input.mask-product-key(type="text")
+						span.help-inline.description a*-999-a999
+
+				.row-fluid
+					.span4.form-control-label
+						label Eye Script
+					.form-controls.span8
+						input.mask-eye(type="text")
+						span.help-inline.description ~9.99 ~9.99 999
+
+				.row-fluid
+					.span4.form-control-label
+						label ISBN
+					.form-controls.span8
+						input.mask-isbn(type="text")
+						span.help-inline.description 999-99-999-9999-9
+
+			form.form-horizontal(action='#')
 				legend Textarea fields
 				.row-fluid
 					.span4.form-control-label
@@ -1325,3 +1397,4 @@ block scripts
 	script(src="/js/vendor/jquery-ui/js/jquery.ui.widget.min.js")
 	script(src="/js/vendor/jquery-ui/js/jquery.ui.button.min.js")
 	script(src="/js/vendor/jquery-ui/js/jquery.ui.spinner.min.js")
+	script(src="/js/vendor/jquery.maskedinput.min.js")
