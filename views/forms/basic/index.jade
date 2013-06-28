@@ -4,6 +4,7 @@ block styles
 	link(rel="stylesheet",href="/js/vendor/pixelmatrix-uniform/themes/default/css/uniform.default.min.css",media="screen")
 	link(rel="stylesheet",href="/js/vendor/chosen/chosen.css",media="screen")
 	link(rel="stylesheet",href="/js/vendor/iCheckbox/css/iCheckbox.css",media="screen")
+	link(rel="stylesheet",href="/js/vendor/inputlimiter/jquery.inputlimiter.1.0.css",media="screen")
 
 block sidebar
 	include ../layouts/sidebar
@@ -224,6 +225,13 @@ block content
 						label(for='textareap') Autogrowing textarea
 					.form-controls.span8
 						textarea.autosize.span12(placeholder="Textarea field placeholder...",name="textarea")
+
+				.row-fluid
+					.span4.form-control-label
+						label(for='textareap') Character counter & input limiter
+					.form-controls.span8
+						textarea.inputlimiter.span12(name="textarea")
+						span#inputlimitertext.description.help-block Field limited to 255 characters.
 
 	.row-fluid
 		.span6
@@ -1498,3 +1506,5 @@ block scripts
 	script(src="/js/vendor/jquery-ui/js/jquery.ui.button.min.js")
 	script(src="/js/vendor/jquery-ui/js/jquery.ui.spinner.min.js")
 	script(src="/js/vendor/jquery.maskedinput.min.js")
+
+	script(src="/js/vendor/inputlimiter/jquery.inputlimiter.1.3.1.min.js")

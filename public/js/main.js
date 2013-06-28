@@ -324,4 +324,14 @@
 		$('.mask-eye').mask('~9.99 ~9.99 999');
 		$('.mask-isbn').mask('999-99-999-9999-9');
 	}
+
+	/**
+	 * Textarea input limiter.
+	 */
+	if ($.fn.inputlimiter) {
+		$('.inputlimiter').inputlimiter({
+			boxId: 'inputlimitertext',
+			boxAttach: false
+		});
+	}
 })(jQuery);
