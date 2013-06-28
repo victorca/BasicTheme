@@ -125,86 +125,71 @@ block content
 					.span4.form-control-label
 						label Date
 					.form-controls.span8
-						input#icons(type="text")
+						input.mask-date(type="text")
 						span.help-inline.description 99/99/9999
+
+				.row-fluid
+					.span4.form-control-label
+						label Date 2
+					.form-controls.span8
+						input.mask-date-2(type="text")
+						span.help-inline.description 9999/99/99
 
 				.row-fluid
 					.span4.form-control-label
 						label Phone
 					.form-controls.span8
-						input#icons(type="text")
+						input.mask-phone(type="text")
 						span.help-inline.description (999) 999-9999
 
 				.row-fluid
 					.span4.form-control-label
-						label Phone + Ext:
+						label Phone + Ext
 					.form-controls.span8
-						input#icons(type="text")
-						span.help-inline.description (999) 999-9999 / x99999
+						input.mask-phone-ext(type="text")
+						span.help-inline.description (999) 999-9999? x99999
 
 				.row-fluid
 					.span4.form-control-label
-						label Int. Phone
+						label International Phone
 					.form-controls.span8
-						input#icons(type="text")
+						input.mask-phone-int(type="text")
 						span.help-inline.description +33 999 999 999
 
 				.row-fluid
 					.span4.form-control-label
 						label Tax ID
 					.form-controls.span8
-						input#icons(type="text")
+						input.mask-tax(type="text")
 						span.help-inline.description 99-9999999
 
 				.row-fluid
 					.span4.form-control-label
 						label SSN
 					.form-controls.span8
-						input#icons(type="text")
+						input.mask-ssn(type="text")
 						span.help-inline.description 999-99-9999
 
 				.row-fluid
 					.span4.form-control-label
 						label Product Key
 					.form-controls.span8
-						input#icons(type="text")
+						input.mask-product-key(type="text")
 						span.help-inline.description a*-999-a999
 
 				.row-fluid
 					.span4.form-control-label
-						label Purchase Order
+						label Eye Script
 					.form-controls.span8
-						input#icons(type="text")
-						span.help-inline.description aaa-999-***
-
-				.row-fluid
-					.span4.form-control-label
-						label Percent
-					.form-controls.span8
-						input#icons(type="text")
-						span.help-inline.description 99%
+						input.mask-eye(type="text")
+						span.help-inline.description ~9.99 ~9.99 999
 
 				.row-fluid
 					.span4.form-control-label
 						label ISBN
 					.form-controls.span8
-						input#icons(type="text")
+						input.mask-isbn(type="text")
 						span.help-inline.description 999-99-999-9999-9
-
-				.row-fluid
-					.span4.form-control-label
-						label IPv4
-					.form-controls.span8
-						input#icons(type="text")
-						span.help-inline.description 10.2.128.25
-
-				.row-fluid
-					.span4.form-control-label
-						label IPv6 TODO
-					.form-controls.span8
-						input#icons(type="text")
-						span.help-inline.description XXX
-
 
 			form.form-horizontal(action='#')
 				legend Textarea fields
@@ -1394,3 +1379,4 @@ block scripts
 	script(src="/js/vendor/chosen/chosen.jquery.min.js")
 	script(src="/js/vendor/jquery.autosize-min.js")
 	script(src="/js/vendor/iCheckbox/jquery.iCheckbox.js")
+	script(src="/js/vendor/jquery.maskedinput.min.js")

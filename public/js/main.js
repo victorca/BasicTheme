@@ -296,4 +296,25 @@
 			switch_speed: 100
 		});
 	}
+
+	/**
+	 * Masked Input.
+	 */
+	if ($.fn.mask) {
+		$.mask.definitions['~']='[+-]';
+
+		$('.mask-date').mask('99/99/9999');
+		$('.mask-date-2').mask('9999/99/99');
+
+		$('.mask-phone').mask('(999) 999-9999');
+		$('.mask-phone-ext').mask('(999) 999-9999? x99999');
+		$('.mask-phone-int').mask('+99 999 999 999');
+
+		$('.mask-tax').mask('99-9999999');
+		$('.mask-ssn').mask('999-99-9999');
+
+		$('.mask-product-key').mask('a*-999-a999');
+		$('.mask-eye').mask('~9.99 ~9.99 999');
+		$('.mask-isbn').mask('999-99-999-9999-9');
+	}
 })(jQuery);
